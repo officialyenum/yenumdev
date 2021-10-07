@@ -4,24 +4,17 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <div className="hero-full-container background-image-container white-text-container showBGImage"> 
-      <div className="section-container">
-        <section>
-          <h1>About Me</h1>
-          <h2>Get to Know me</h2>
-          <div>
-            <article>
-              <Link>
-                <span>
-                  {/* <img /> */}
-                  <span>
-                    {/* <h3></h3> */}
-                  </span>
-                </span>
-              </Link>
-            </article>
+        <main className="min-h-screen p-12">
+        <section className="container mx-auto">
+          <h1 className="text-5xl flex justify-center cursive mt-24">About Me</h1>
+          <h2 className="text-lg text-gray-600 flex justify-center mb-12">
+            Get to Know Me
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
           </div>
         </section>
-      </div>
+      </main>
     </div>
   );
 };

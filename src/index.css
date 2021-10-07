@@ -28,6 +28,8 @@ html {
 }
 .showBGImage {
   background-image: url("assets/images/portfolio.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 body {
   margin: 0;
