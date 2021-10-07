@@ -7,13 +7,21 @@ const Footer = () => {
         <div className="row">
           <div className="col-xs-12">
             <p className="text-white">
-              © YENUM.DEV | Website created with{" "}
+              © YENUM.DEV | Portfolio created with ReactJS {"& "} 
+              <a
+                href="https://www.sanity.io/"
+                title="Create website with free html template"
+                className="text-primary"
+              >
+                Sanity.io
+              </a>
+              {" Template From :"}
               <a
                 href="http://www.mashup-template.com/"
                 title="Create website with free html template"
                 className="text-primary"
               >
-                Mashup Template
+                Mashup
               </a>
               /
               <a 
