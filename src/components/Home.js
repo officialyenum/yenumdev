@@ -10,14 +10,15 @@ const Home = () => {
             <div className="col-xs-12">
               <div className="hero-full-wrapper">
                 <div className="text-content">
-                <h1 style={{ fontSize: 48 }}>Hello World, 
+                <h1 style={{ fontSize: 48 }}>
+                    <span className="text-info">Hello World,</span> 
                     <br/>
-                    <span className="text-info"  style={{ fontSize: 36 }}>
+                    <span  style={{ fontSize: 36 }}>
                         I'm Yenum
                     </span>
                 </h1>
                 <p style={{ fontSize: 24 }}>
-                    <span className="text-info">
+                    <span>
                       Software Developer | Aspiring Unity Generalist
                     </span>
                 </p>

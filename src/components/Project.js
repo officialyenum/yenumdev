@@ -33,7 +33,7 @@ const Project = () => {
             {projectData &&
               projectData.map((project, index) => (
                 <article key={index}>
-                  <div className="px-2 py-3 bg-blue-200 rounded">
+                  <div className="px-2 py-3 bg-gray-800 rounded">
                       <span className="block relative h-full flex justify-center items-center pr-4 pb-4">
                         <h3 className="text-gray-800 text-lg font-blog px-3 py-4 bg-blue-400 text-red-100 bg-opacity-75 rounded">
                           {project.title}
