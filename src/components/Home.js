@@ -75,7 +75,7 @@ const Home = () => {
                       style={{textDecoration: "none"}}
                       className="mx-4"
                       >
-                    <IconBtn color="blue" text="Play My Games On Unity" clickUrl="https://play.unity.com/u/officialyenum" />
+                    <IconBtn icon="mdi:unity" color="blue" text="Play My Games On Unity" clickUrl="https://play.unity.com/u/officialyenum" />
                     </a>
                     <a
                       href="https://officialyenum.medium.com/" 
@@ -85,7 +85,7 @@ const Home = () => {
                       style={{textDecoration: "none"}}
                       className="mx-4"
                       >
-                    <IconBtn color="gray" text="Read My Articles on medium" />
+                    <IconBtn icon="mdi:medium" color="gray" text="Read My Articles on medium" />
                     </a>
                   </div>
                 </div>

@@ -13,7 +13,7 @@ export default function IconBtn(props) {
                 iconOnly={false}
                 ripple="light"
             >
-                <Icon icon="mdi:unity" style={{ fontSize: '24px' }}/> {props.text}
+                <Icon icon={props.icon} style={{ fontSize: '24px' }}/> {props.text}
             </Button>
     )
 }
