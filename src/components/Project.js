@@ -21,6 +21,7 @@ const Project = () => {
       .catch(console.error);
   }, []);
   return (
+    <div className="hero-full-container background-image-container white-text-container showBGImage"> 
     <div className="section-container">
       <main className="min-h-screen p-12">
         <section className="container mx-auto">
@@ -69,6 +70,7 @@ const Project = () => {
           </div>
         </section>
       </main>
+    </div>
     </div>
   );
 };

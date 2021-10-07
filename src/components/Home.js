@@ -4,7 +4,6 @@ import IconBtn from "./UI/IconBtn";
 
 const Home = () => {
   return (
-    <div>
       <div className="hero-full-container background-image-container white-text-container showBGImage">
         <div className="container">
           <div className="row">
@@ -19,7 +18,7 @@ const Home = () => {
                 </h1>
                 <p style={{ fontSize: 24 }}>
                     <span className="text-info">
-                      Developer
+                      Software Developer | Aspiring Unity Generalist
                     </span>
                 </p>
                   {/* <h1>
@@ -95,7 +94,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 

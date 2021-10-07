@@ -11,7 +11,7 @@ const Footer = () => {
               <a
                 href="https://www.sanity.io/"
                 title="Create website with free html template"
-                className="text-primary"
+                className="text-info"
               >
                 Sanity.io
               </a>
@@ -19,7 +19,7 @@ const Footer = () => {
               <a
                 href="http://www.mashup-template.com/"
                 title="Create website with free html template"
-                className="text-primary"
+                className="text-info"
               >
                 Mashup
               </a>
@@ -27,7 +27,7 @@ const Footer = () => {
               <a 
                 href="https://www.unsplash.com/" 
                 title="Beautiful Free Images"
-                className="text-primary">
+                className="text-info">
                 Unsplash
               </a>
             </p>

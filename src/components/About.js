@@ -3,23 +3,25 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <div className="section-container">
-      <section>
-        <h1>About Me</h1>
-        <h2>Get to Know me</h2>
-        <div>
-          <article>
-            <Link>
-              <span>
-                {/* <img /> */}
+    <div className="hero-full-container background-image-container white-text-container showBGImage"> 
+      <div className="section-container">
+        <section>
+          <h1>About Me</h1>
+          <h2>Get to Know me</h2>
+          <div>
+            <article>
+              <Link>
                 <span>
-                  {/* <h3></h3> */}
+                  {/* <img /> */}
+                  <span>
+                    {/* <h3></h3> */}
+                  </span>
                 </span>
-              </span>
-            </Link>
-          </article>
-        </div>
-      </section>
+              </Link>
+            </article>
+          </div>
+        </section>
+      </div>
     </div>
   );
 };

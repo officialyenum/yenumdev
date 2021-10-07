@@ -23,7 +23,9 @@ const Post = () => {
       .catch(console.error);
   }, []);
   return (
-    <div className="section-container">
+    
+    <div className="hero-full-container background-image-container white-text-container showBGImage"> 
+      <div className="section-container">
       <main className="min-h-screen p-12">
         <section className="container mx-auto">
           <h1 className="text-5xl flex justify-center cursive">Blog</h1>
@@ -58,6 +60,7 @@ const Post = () => {
           </div>
         </section>
       </main>
+    </div>
     </div>
   );
 };
