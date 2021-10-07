@@ -11,15 +11,15 @@ const Home = () => {
             <div className="col-xs-12">
               <div className="hero-full-wrapper">
                 <div className="text-content">
-                <h1>Hello, 
+                <h1 style={{ fontSize: 48 }}>Hello World, 
                     <br/>
-                    <span class="text-info">
-                        I'm Yenum Opone
+                    <span className="text-info"  style={{ fontSize: 36 }}>
+                        I'm Yenum
                     </span>
                 </h1>
                 <p style={{ fontSize: 24 }}>
-                    <span class="text-info">
-                        Aspiring Game Developer
+                    <span className="text-info">
+                      Developer
                     </span>
                 </p>
                   {/* <h1>
@@ -67,8 +67,27 @@ const Home = () => {
                   </div>
                   <br />
                   <div className="ml-5 my-2 inline-flex">
+
+                  <a
+                      href="https://play.unity.com/u/officialyenum" 
+                      alt="Play My Games On Unity"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{textDecoration: "none"}}
+                      className="mx-4"
+                      >
                     <IconBtn color="blue" text="Play My Games On Unity" clickUrl="https://play.unity.com/u/officialyenum" />
-                    <IconBtn color="gray" text="Read My Articles on medium" clickUrl="https://officialyenum.medium.com/" />
+                    </a>
+                    <a
+                      href="https://officialyenum.medium.com/" 
+                      alt="Read My Articles on medium"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{textDecoration: "none"}}
+                      className="mx-4"
+                      >
+                    <IconBtn color="gray" text="Read My Articles on medium" />
+                    </a>
                   </div>
                 </div>
               </div>
