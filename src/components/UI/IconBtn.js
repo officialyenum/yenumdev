@@ -13,7 +13,10 @@ export default function IconBtn(props) {
                 iconOnly={false}
                 ripple="light"
             >
-                <Icon icon={props.icon} style={{ fontSize: '24px' }}/> {props.text}
+                <Icon icon={props.icon} style={{ fontSize: '36px' }}/> 
+                <p className="cursive">
+                    {props.text}
+                </p>
             </Button>
     )
 }

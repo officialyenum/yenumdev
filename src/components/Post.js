@@ -23,20 +23,20 @@ const Post = () => {
       .catch(console.error);
   }, []);
   return (
-    <div className="hero-full-container background-image-container white-text-container showBGImage"> 
-        <main className="min-h-screen p-12">
+    <div className="hero-full-container background-image-container white-text-container showBGImage">
+      <main className="min-h-screen p-12">
         <section className="container mx-auto">
-          <h1 className="text-5xl flex justify-center cursive mt-24">Blog</h1>
-          <h2 className="text-lg text-gray-600 flex justify-center mb-12">
-            Welcome to my page of Blog Posts
+          <h1 className="text-5xl flex text-gray-200 justify-center cursive mt-2">
+            Blog
+          </h1>
+          <h2 className="text-lg text-gray-400 flex justify-center mb-12">
+            Follow my Blog Posts
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {postData &&
               postData.map((post, index) => (
                 <article key={post.slug.current}>
-                  <Link
-                    to={"/post/" + post.slug.current}
-                  >
+                  <Link to={"/post/" + post.slug.current}>
                     <span
                       className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-green-400"
                       key={index}
