@@ -58,7 +58,7 @@ const About = () => {
                   </figcaption>
                 </div>
                 <img
-                  className="w-32 h-32 lg:w-96 md:w-48 md:h-auto md:rounded-none rounded-full object-cover mx-auto"
+                  className="w-48 h-48 lg:w-96 md:w-96 md:h-96 md:rounded-none rounded-full object-cover mx-auto"
                   src={urlFor(authorData.authorImage).url()}
                   alt=""
                   width="768"

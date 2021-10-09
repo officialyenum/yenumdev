@@ -10,11 +10,11 @@ const Home = () => {
         alt="bg img"
         className="absolute object-cover w-full h-full"
       />
-      <section className="relative flex justify-center min-h-screen pt-12 md:pt-32 lg:pt-32 px-8">
+      <section className="relative flex justify-center min-h-screen pt-32 md:pt-32 lg:pt-32 px-8">
         <div className="row">
           <div className="col-12">
-            <h1 className="text-6xl text-blue-500 font-bold cursive leading-none lg:leading-snug lg:home-name">
-              Hello, I'm Yenum Opone
+            <h1 className="text-6xl text-blue-500 text-center  font-bold cursive leading-none lg:leading-snug lg:home-name">
+              Yenum Opone
             </h1>
           </div>
           <div className="col-12">
@@ -22,35 +22,37 @@ const Home = () => {
               Software Developer | Aspiring Game Programmer
             </p>
           </div>
-          <a
-            href="https://play.unity.com/u/officialyenum"
-            alt="Play My Games On Unity"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ textDecoration: "none" }}
-            className="mx-1"
-          >
-            <IconBtn
-              icon="mdi:unity"
-              color="blue"
-              text="Play My Games On Unity"
-              clickUrl="https://play.unity.com/u/officialyenum"
-            />
-          </a>
-          <a
-            href="https://officialyenum.medium.com/"
-            alt="Read My Stories on medium"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ textDecoration: "none" }}
-            className="mx-1"
-          >
-            <IconBtn
-              icon="mdi:medium"
-              color="gray"
-              text="Read My Stories on medium"
-            />
-          </a>
+          <div class="grid grid-cols-2 gap-6">
+            <div className="col-start-1 col-end-4">
+              <a
+                href="https://play.unity.com/u/officialyenum"
+                alt="Play My Games On Unity"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: "none" }}
+                className="mx-1"
+              >
+                <IconBtn
+                  icon="mdi:unity"
+                  color="blue"
+                  text="My Games On"
+                  clickUrl="https://play.unity.com/u/officialyenum"
+                />
+              </a>
+            </div>
+            <div className="col-end-6 col-span-1">
+              <a
+                href="https://officialyenum.medium.com/"
+                alt="Read My Stories on medium"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: "none" }}
+                className="mx-1"
+              >
+                <IconBtn icon="mdi:medium" color="gray" text="My Articles on" />
+              </a>
+            </div>
+          </div>
         </div>
         <br />
       </section>
