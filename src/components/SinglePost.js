@@ -37,7 +37,7 @@ const SinglePost = () => {
   }, [slug]);
 
   if (!singlePost)
-    return <div className="text-gray-200 text-center">Loading...</div>;
+    return <div className="text-gray-200 text-center">Loading...</div>
 
   return (
     <div className="hero-full-container background-image-container white-text-container showBGImage">

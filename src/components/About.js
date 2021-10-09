@@ -66,7 +66,7 @@ const About = () => {
                 />
               </figure>
             )}
-            ;{!authorData && <div>Loading...</div>}
+            {!authorData && <div>Loading...</div>}
             <div></div>
           </div>
         </section>
