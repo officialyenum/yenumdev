@@ -22,7 +22,7 @@ const Home = () => {
               Software Developer | Aspiring Game Programmer
             </p>
           </div>
-          <div class="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-2 gap-6">
             <div className="col-start-1 col-end-4">
               <a
                 href="https://play.unity.com/u/officialyenum"
