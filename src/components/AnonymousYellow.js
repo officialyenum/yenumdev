@@ -58,6 +58,10 @@ const AnonymousYellow = () => {
         setIsValid(true);
         setErrorMessage("Your Message was successfully sent!");
         setShowModal(true);
+      })
+      .catch((err) => {
+        console.log(err);
+        return;
       });
     //   gBGHI0cGRIIgHwIJ13_TUSW2r7r2;
     //   gBGHI0cGRIIgHwIJ3mVj9bydI89a;
