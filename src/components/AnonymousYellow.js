@@ -26,19 +26,24 @@ const AnonymousYellow = () => {
       console.log(errorMessage);
       return;
     }
-    if (tuesday !== 2 && (hour <= 17 || hour >= 20)) {
-      setIsValid(false);
-      setErrorMessage(
-        "You can only submit messages on Tuesdays from 05:00pm WAT TO 08:00PM WAT"
-      );
-      setShowModal(true);
-      console.log(errorMessage);
-      return;
-    }
+    // if (tuesday !== 2 && (hour <= 17 || hour >= 20)) {
+    //   setIsValid(false);
+    //   setErrorMessage(
+    //     "You can only submit messages on Tuesdays from 05:00pm WAT TO 08:00PM WAT"
+    //   );
+    //   setShowModal(true);
+    //   console.log(errorMessage);
+    //   return;
+    // }
 
     const requestOptions = {
       method: "POST",
       headers: {
+        Connection: "keep-alive",
+        Accept: "application/json",
+        Origin: "http:localhost:3000",
+        Credentials: "include",
+        "Access-Control-Allow-Origin": "*",
         "Content-Type": "application/json",
         "D360-API-KEY": "HrJtZy_sandbox",
       },
