@@ -6,6 +6,7 @@ import Post from "./components/Post";
 import Project from "./components/Project";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+import AnonymousYellow from "./components/AnonymousYellow";
 function App() {
   return (
     <BrowserRouter basename="/">
@@ -16,6 +17,7 @@ function App() {
         <Route component={SinglePost} path="/post/:slug" />
         <Route component={Post} path="/post" />
         <Route component={Project} path="/project" />
+        <Route component={AnonymousYellow} path="/anonymous-yellow" />
       </Switch>
       <Footer />
     </BrowserRouter>
