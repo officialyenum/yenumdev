@@ -28,15 +28,15 @@ const AnonymousYellow = () => {
       console.log(errorMessage);
       return;
     }
-    if (tuesday !== 2 && (hour <= 17 || hour >= 20)) {
-      setIsValid(false);
-      setErrorMessage(
-        "You can only submit messages on Tuesdays from 05:00pm WAT TO 08:00PM WAT"
-      );
-      setShowModal(true);
-      console.log(errorMessage);
-      return;
-    }
+    // if (tuesday !== 2 && (hour <= 17 || hour >= 20)) {
+    //   setIsValid(false);
+    //   setErrorMessage(
+    //     "You can only submit messages on Tuesdays from 05:00pm WAT TO 08:00PM WAT"
+    //   );
+    //   setShowModal(true);
+    //   console.log(errorMessage);
+    //   return;
+    // }
 
     const requestOptions = {
       method: "POST",
@@ -44,7 +44,7 @@ const AnonymousYellow = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        chat_id: -742245862,
+        chat_id: -1001152538944,
         text: message,
       }),
     };
@@ -58,7 +58,6 @@ const AnonymousYellow = () => {
       })
       .catch((err) => {
         console.log(err);
-
         return;
       });
     // const article = {
