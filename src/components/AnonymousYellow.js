@@ -1,5 +1,7 @@
+// import axios from "axios";
 import React, { useState } from "react";
 
+const TOKEN = "bot2081684117:AAEL-Fx3N7e_FZlQZ67KUQSKXA-cEJhaYaw";
 const AnonymousYellow = () => {
   const [message, setMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
@@ -26,37 +28,27 @@ const AnonymousYellow = () => {
       console.log(errorMessage);
       return;
     }
-    // if (tuesday !== 2 && (hour <= 17 || hour >= 20)) {
-    //   setIsValid(false);
-    //   setErrorMessage(
-    //     "You can only submit messages on Tuesdays from 05:00pm WAT TO 08:00PM WAT"
-    //   );
-    //   setShowModal(true);
-    //   console.log(errorMessage);
-    //   return;
-    // }
+    if (tuesday !== 2 && (hour <= 17 || hour >= 20)) {
+      setIsValid(false);
+      setErrorMessage(
+        "You can only submit messages on Tuesdays from 05:00pm WAT TO 08:00PM WAT"
+      );
+      setShowModal(true);
+      console.log(errorMessage);
+      return;
+    }
 
     const requestOptions = {
       method: "POST",
       headers: {
-        Connection: "keep-alive",
-        Accept: "application/json",
-        Origin: "http:localhost:3000",
-        Credentials: "include",
-        "Access-Control-Allow-Origin": "*",
         "Content-Type": "application/json",
-        "D360-API-KEY": "HrJtZy_sandbox",
       },
       body: JSON.stringify({
-        recipient_type: "individual",
-        to: "2347064482201",
-        type: "text",
-        text: {
-          body: message,
-        },
+        chat_id: -742245862,
+        text: message,
       }),
     };
-    fetch("https://waba-sandbox.360dialog.io/v1/messages", requestOptions)
+    fetch(`https://api.telegram.org/${TOKEN}/sendMessage`, requestOptions)
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
@@ -66,8 +58,40 @@ const AnonymousYellow = () => {
       })
       .catch((err) => {
         console.log(err);
+
         return;
       });
+    // const article = {
+    //   recipient_type: "individual",
+    //   to: "2347064482201",
+    //   type: "text",
+    //   text: {
+    //     body: message,
+    //   },
+    // };
+    // const headers = {
+    //   Accept: "application/json",
+    //   "Content-Type": "application/json",
+    //   "D360-API-KEY": "HrJtZy_sandbox",
+    //   "Access-Control-Allow-Origin": "http://localhost:3000",
+    //   "Access-Control-Allow-Credentials": true,
+    // };
+    // axios
+    //   .post("https://waba-sandbox.360dialog.io/v1/messages", article, {
+    //     headers,
+    //   })
+    //   .then((response) => {
+    //     console.log(response);
+    //     setIsValid(true);
+    //     setErrorMessage("Your Message was successfully sent!");
+    //     setShowModal(true);
+    //   })
+    //   .catch((error) => {
+    //     console.log(error);
+    //     setIsValid(false);
+    //     setErrorMessage(error);
+    //     setShowModal(true);
+    //   });
     //   gBGHI0cGRIIgHwIJ13_TUSW2r7r2;
     //   gBGHI0cGRIIgHwIJ3mVj9bydI89a;
     console.log(tuesday, hour);
