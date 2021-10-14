@@ -28,15 +28,15 @@ const AnonymousYellow = () => {
       console.log(errorMessage);
       return;
     }
-    // if (tuesday !== 2 && (hour <= 17 || hour >= 20)) {
-    //   setIsValid(false);
-    //   setErrorMessage(
-    //     "You can only submit messages on Tuesdays from 05:00pm WAT TO 08:00PM WAT"
-    //   );
-    //   setShowModal(true);
-    //   console.log(errorMessage);
-    //   return;
-    // }
+    if (tuesday !== 2 && (hour <= 17 || hour >= 20)) {
+      setIsValid(false);
+      setErrorMessage(
+        "You can only submit messages on Tuesdays from 05:00pm WAT TO 08:00PM WAT"
+      );
+      setShowModal(true);
+      console.log(errorMessage);
+      return;
+    }
 
     const requestOptions = {
       method: "POST",
