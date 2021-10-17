@@ -72,28 +72,29 @@ const AnonymousYellowList = () => {
   }, [isError, titleMessage, errorMessage]);
 
   const publishToTelegram = (props) => {
-    console.log(props);
-    var d = new Date();
-    var tuesday = d.getDay();
-    var hour = d.getHours();
-    console.log("HOUR", hour);
-    if (tuesday !== 2) {
-      Toast.fire({
-        icon: "error",
-        title:
-          "You can only submit messages on Tuesdays from 05:00pm WAT TO 08:00PM WAT",
-      });
-    } else {
-      if (hour <= 17 && hour >= 20) {
-        Toast.fire({
-          icon: "error",
-          title:
-            "You can only submit messages on Tuesdays from 05:00pm WAT TO 08:00PM WAT",
-        });
-      } else {
-        publishMessage(props);
-      }
-    }
+    publishMessage(props);
+    // console.log(props);
+    // var d = new Date();
+    // var tuesday = d.getDay();
+    // var hour = d.getHours();
+    // console.log("HOUR", hour);
+    // if (tuesday !== 2) {
+    //   Toast.fire({
+    //     icon: "error",
+    //     title:
+    //       "You can only submit messages on Tuesdays from 05:00pm WAT TO 08:00PM WAT",
+    //   });
+    // } else {
+    //   if (hour <= 17 && hour >= 20) {
+    //     Toast.fire({
+    //       icon: "error",
+    //       title:
+    //         "You can only submit messages on Tuesdays from 05:00pm WAT TO 08:00PM WAT",
+    //     });
+    //   } else {
+    //     publishMessage(props);
+    //   }
+    // }
   };
 
   const deleteMessage = (props) => {
@@ -162,7 +163,6 @@ const AnonymousYellowList = () => {
   };
 
   const publishMessage = (props) => {
-    console.log(props);
     const requestOptions = {
       method: "POST",
       headers: {
