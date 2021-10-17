@@ -150,7 +150,7 @@ const AnonymousYellowList = () => {
       .then((response) => response.json())
       .then((data) => {
         Toast.fire({
-          icon: "error",
+          icon: "success",
           title: "Message Has been marked as published",
         });
         setRefreshKey((oldKey) => oldKey + 1);
@@ -163,6 +163,7 @@ const AnonymousYellowList = () => {
   };
 
   const publishMessage = (props) => {
+    const newMESSAGE = `<u><b>POST ${props.id}</b></u> \n\n ${props.content}`;
     const requestOptions = {
       method: "POST",
       headers: {
@@ -170,7 +171,8 @@ const AnonymousYellowList = () => {
       },
       body: JSON.stringify({
         chat_id: TEST_GROUP,
-        text: props.content,
+        text: newMESSAGE,
+        parse_mode: "HTML",
       }),
     };
     fetch(`https://api.telegram.org/${TOKEN}/sendMessage`, requestOptions)
