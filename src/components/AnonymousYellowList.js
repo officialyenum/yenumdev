@@ -5,8 +5,8 @@ import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 
 const TOKEN = "bot2081684117:AAEL-Fx3N7e_FZlQZ67KUQSKXA-cEJhaYaw";
-const TEST_GROUP = -742245862;
-// const AWC_GROUP = -1001152538944;
+// const TEST_GROUP = -742245862;
+const AWC_GROUP = -1001152538944;
 
 const MySwal = withReactContent(Swal);
 const Toast = Swal.mixin({
@@ -168,7 +168,7 @@ const AnonymousYellowList = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        chat_id: TEST_GROUP,
+        chat_id: AWC_GROUP,
         text: newMESSAGE,
         parse_mode: "HTML",
       }),
