@@ -45,21 +45,30 @@ const AnonymousYellowItem = (props) => {
           >
             View
           </button>
-          <button
-            className="flex shadow bg-green-500 hover:bg-green-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-2 mx-2 rounded"
-            onClick={publishHandler}
-          >
-            Publish
-          </button>
           {props.message.published === 1 ? (
-            <button
-              className="flex shadow bg-red-500 hover:bg-red-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-2 mx-2 rounded"
-              onClick={deleteHandler}
-            >
-              Delete
-            </button>
+            <>
+              <button
+                className="flex shadow bg-green-500 hover:bg-green-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-2 mx-2 rounded"
+                onClick={publishHandler}
+              >
+                Publish Again
+              </button>
+              <button
+                className="flex shadow bg-red-500 hover:bg-red-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-2 mx-2 rounded"
+                onClick={deleteHandler}
+              >
+                Delete
+              </button>
+            </>
           ) : (
-            <></>
+            <>
+              <button
+                className="flex shadow bg-green-500 hover:bg-green-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-2 mx-2 rounded"
+                onClick={publishHandler}
+              >
+                Publish
+              </button>
+            </>
           )}
         </div>
       </td>

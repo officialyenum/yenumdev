@@ -55,12 +55,6 @@ const AnonymousYellowList = () => {
   }, [type, refreshKey]);
 
   useEffect(() => {
-    setIsError(false);
-    setTitleMessage("View Clicked Message");
-    return () => {};
-  }, [clicked]);
-
-  useEffect(() => {
     MySwal.fire({
       title: titleMessage,
       text: errorMessage,
@@ -69,7 +63,7 @@ const AnonymousYellowList = () => {
       footer: "Copyright Yenum 2021",
     });
     return () => {};
-  }, [isError, titleMessage, errorMessage]);
+  }, [clicked, isError, titleMessage, errorMessage]);
 
   const publishToTelegram = (props) => {
     publishMessage(props);
