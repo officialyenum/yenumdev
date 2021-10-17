@@ -54,7 +54,6 @@ const AnonymousYellow = () => {
 
   const formSubmitHandler = (event) => {
     event.preventDefault();
-
     if (message.trim().length === 0) {
       Toast.fire({
         icon: "error",
@@ -80,6 +79,7 @@ const AnonymousYellow = () => {
       .then((response) => response.json())
       .then((data) => {
         console.log(data.data);
+        setMessage("");
         setErrorMessage("Submitted Successfully");
         setTitleMessage("Anonymous Yellow");
         setIsError(false);
@@ -112,11 +112,13 @@ const AnonymousYellow = () => {
               Message
             </label>
             <textarea
+              id="message"
               className="form-textarea mt-1 text-lg text-gray-400 flex justify-center rounded p-4 mb-12 block w-full"
               rows="5"
               cols="5"
               placeholder="Enter Your Anonymous message here."
               onChange={messageChangeHandler}
+              value={message}
             ></textarea>
             {/* <input className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" value="Jane Doe"> */}
             <div className=" flex justify-center">
