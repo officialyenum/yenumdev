@@ -74,14 +74,14 @@ const AnonymousYellow = () => {
     };
 
     setErrorMessage("Your request is being processed please wait a moment....");
-    setTitleMessage("Anonymous");
+    setTitleMessage("Anonymous Yellow");
     setIsError(false);
     fetch(`https://dashboard.yenum.dev/api/anonymous-yellow`, requestOptions)
       .then((response) => response.json())
       .then((data) => {
         console.log(data.data);
         setErrorMessage("Submitted Successfully");
-        setTitleMessage("Anonymous");
+        setTitleMessage("Anonymous Yellow");
         setIsError(false);
       })
       .catch((err) => {

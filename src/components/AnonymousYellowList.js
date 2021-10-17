@@ -24,10 +24,10 @@ const Toast = Swal.mixin({
 const AnonymousYellowList = () => {
   const [messages, setMessages] = useState(null);
   const [errorMessage, setErrorMessage] = useState(
-    "Welcome To Anonymous Yellow Dashboard"
+    "Welcome To Anonymous Yellow Messages Dashboard"
   );
   const [type, setType] = useState(0);
-  const [titleMessage, setTitleMessage] = useState("Dashboard");
+  const [titleMessage, setTitleMessage] = useState("Anonymous Yellow");
   const [isError, setIsError] = useState(false);
   const [refreshKey, setRefreshKey] = useState(0);
   const [clicked, setClicked] = useState(0);
@@ -109,13 +109,17 @@ const AnonymousYellowList = () => {
       .then((response) => response.json())
       .then((data) => {
         Toast.fire({
-          icon: "error",
+          icon: "success",
           title: "Message Has been Deleted",
         });
         setRefreshKey((oldKey) => oldKey + 1);
         return data.data;
       })
       .catch((err) => {
+        Toast.fire({
+          icon: "error",
+          title: "An Error Occured trying to delete message",
+        });
         console.log(err);
         return err;
       });
@@ -123,7 +127,7 @@ const AnonymousYellowList = () => {
 
   const showItemModal = (message) => {
     setIsError(false);
-    setTitleMessage("Anonymous Message");
+    setTitleMessage("Anonymous Yellow");
     setErrorMessage(message);
     setClicked((oldKey) => oldKey + 1);
     // toast(message, toastOptions);
