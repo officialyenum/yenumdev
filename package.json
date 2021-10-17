@@ -2,8 +2,10 @@
   "name": "yenumdev",
   "version": "0.1.0",
   "private": true,
+  "sideEffects": [
+    "*.css"
+  ],
   "dependencies": {
-    "@babel/core": "^7.15.8",
     "@headlessui/react": "^1.4.1",
     "@heroicons/react": "^1.0.4",
     "@iconify/react": "^3.0.1",
@@ -16,14 +18,19 @@
     "@testing-library/user-event": "^12.8.3",
     "autoprefixer": "^9.8.8",
     "axios": "^0.23.0",
+    "moment": "^2.29.1",
     "postcss": "^8.3.9",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-moment": "^1.1.1",
     "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
     "react-social-icons": "^5.6.1",
+    "react-toastify": "^8.0.3",
+    "sweetalert-react": "^0.4.11",
+    "sweetalert2": "^11.1.8",
+    "sweetalert2-react-content": "^4.1.1",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.16",
-    "typescript": "^4.4.3",
     "web-vitals": "^1.1.2"
   },
   "scripts": {

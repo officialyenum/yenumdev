@@ -1,3 +1,4 @@
+import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -7,6 +8,10 @@ import Project from "./components/Project";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import AnonymousYellow from "./components/AnonymousYellow";
+import AnonymousYellowList from "./components/AnonymousYellowList";
+import NotFound from "./components/NotFound";
+
+
 function App() {
   return (
     <BrowserRouter basename="/">
@@ -18,6 +23,11 @@ function App() {
         <Route component={Post} path="/post" />
         <Route component={Project} path="/project" />
         <Route component={AnonymousYellow} path="/anonymous-yellow" />
+        <Route
+          component={AnonymousYellowList}
+          path="/anonymous/dashboard/publish/oreofe"
+        />
+        <Route component={NotFound} />
       </Switch>
       <Footer />
     </BrowserRouter>

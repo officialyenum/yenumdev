@@ -1,40 +1,65 @@
 // import axios from "axios";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
-const TOKEN = "bot2081684117:AAEL-Fx3N7e_FZlQZ67KUQSKXA-cEJhaYaw";
+// const TOKEN = "bot2081684117:AAEL-Fx3N7e_FZlQZ67KUQSKXA-cEJhaYaw";
+// const AWC_GROUP = -1001152538944;
+// const TEST_GROUP = -742245862;
+
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
+
+const MySwal = withReactContent(Swal);
+const Toast = Swal.mixin({
+  toast: true,
+  position: "top-end",
+  showConfirmButton: false,
+  timer: 3000,
+  timerProgressBar: true,
+  didOpen: (toast) => {
+    toast.addEventListener("mouseenter", Swal.stopTimer);
+    toast.addEventListener("mouseleave", Swal.resumeTimer);
+  },
+});
+
 const AnonymousYellow = () => {
   const [message, setMessage] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
-  const [showModal, setShowModal] = useState(false);
-  const [isValid, setIsValid] = useState(true);
+  const [errorMessage, setErrorMessage] = useState(
+    "Fill Form To Send Your Messages Anonymously to the AWC Telegram group"
+  );
+  const [titleMessage, setTitleMessage] = useState("Anonymous Yellow");
+  const [isError, setIsError] = useState(false);
   const messageChangeHandler = (event) => {
     if (event.target.value.trim().length === 0) {
-      setIsValid(false);
+      setIsError(false);
     }
-    console.log(event.target.value);
     setMessage(event.target.value);
   };
+
+  useEffect(() => {
+    MySwal.fire({
+      title: titleMessage,
+      text: errorMessage,
+      icon: isError ? "error" : "success",
+      confirmButtonText: "OK",
+      footer: "Copyright Yenum 2021",
+    });
+    return () => {};
+  }, [isError, titleMessage, errorMessage]);
+
+  // const notify = () => {
+  //   setIsError(false);
+  //   setTitleMessage("TITLE");
+  //   setErrorMessage("a message");
+  // };
 
   const formSubmitHandler = (event) => {
     event.preventDefault();
 
-    var d = new Date();
-    var tuesday = d.getDay();
-    var hour = d.getHours();
     if (message.trim().length === 0) {
-      setIsValid(false);
-      setErrorMessage("No Message to Submit");
-      setShowModal(true);
-      console.log(errorMessage);
-      return;
-    }
-    if (tuesday !== 2 && (hour <= 17 || hour >= 20)) {
-      setIsValid(false);
-      setErrorMessage(
-        "You can only submit messages on Tuesdays from 05:00pm WAT TO 08:00PM WAT"
-      );
-      setShowModal(true);
-      console.log(errorMessage);
+      Toast.fire({
+        icon: "error",
+        title: "No Message to Submit",
+      });
       return;
     }
 
@@ -44,58 +69,29 @@ const AnonymousYellow = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        chat_id: -1001152538944,
         text: message,
       }),
     };
-    fetch(`https://api.telegram.org/${TOKEN}/sendMessage`, requestOptions)
+
+    setErrorMessage("Your request is being processed please wait a moment....");
+    setTitleMessage("Anonymous");
+    setIsError(false);
+    fetch(`https://dashboard.yenum.dev/api/anonymous-yellow`, requestOptions)
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
-        setIsValid(true);
-        setErrorMessage("Your Message was successfully sent!");
-        setShowModal(true);
+        console.log(data.data);
+        setErrorMessage("Submitted Successfully");
+        setTitleMessage("Anonymous");
+        setIsError(false);
       })
       .catch((err) => {
+        Toast.fire({
+          icon: "error",
+          title: err,
+        });
         console.log(err);
         return;
       });
-    // const article = {
-    //   recipient_type: "individual",
-    //   to: "2347064482201",
-    //   type: "text",
-    //   text: {
-    //     body: message,
-    //   },
-    // };
-    // const headers = {
-    //   Accept: "application/json",
-    //   "Content-Type": "application/json",
-    //   "D360-API-KEY": "HrJtZy_sandbox",
-    //   "Access-Control-Allow-Origin": "http://localhost:3000",
-    //   "Access-Control-Allow-Credentials": true,
-    // };
-    // axios
-    //   .post("https://waba-sandbox.360dialog.io/v1/messages", article, {
-    //     headers,
-    //   })
-    //   .then((response) => {
-    //     console.log(response);
-    //     setIsValid(true);
-    //     setErrorMessage("Your Message was successfully sent!");
-    //     setShowModal(true);
-    //   })
-    //   .catch((error) => {
-    //     console.log(error);
-    //     setIsValid(false);
-    //     setErrorMessage(error);
-    //     setShowModal(true);
-    //   });
-    //   gBGHI0cGRIIgHwIJ13_TUSW2r7r2;
-    //   gBGHI0cGRIIgHwIJ3mVj9bydI89a;
-    console.log(tuesday, hour);
-    console.log(isValid);
-    console.log(message);
   };
 
   return (
@@ -134,48 +130,6 @@ const AnonymousYellow = () => {
           </form>
         </section>
       </main>
-      {showModal ? (
-        <>
-          <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
-            <div className="relative w-auto my-6 mx-auto max-w-3xl">
-              {/*content*/}
-              <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
-                {/*header*/}
-                <div className="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
-                  <h3 className="text-3xl font-semibold">
-                    {isValid ? "Success" : "An Error Occured"}
-                  </h3>
-                  <button
-                    className="p-1 ml-auto bg-transparent border-0 text-red opacity-75 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
-                    onClick={() => setShowModal(false)}
-                  >
-                    <span className="bg-transparent text-red opacity-75 h-6 w-6 text-2xl block outline-none focus:outline-none">
-                      ×
-                    </span>
-                  </button>
-                </div>
-                {/*body*/}
-                <div className="relative p-6 flex-auto">
-                  <p className="text-center my-4 text-blueGray-500 text-lg leading-relaxed">
-                    {errorMessage}
-                  </p>
-                </div>
-                {/*footer*/}
-                <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
-                  <button
-                    className="text-gray-00 bg-red-500 font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 rounded"
-                    type="button"
-                    onClick={() => setShowModal(false)}
-                  >
-                    Close
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
-        </>
-      ) : null}
     </div>
   );
 };
