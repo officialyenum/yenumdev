@@ -17,7 +17,7 @@ const AnonymousYellowItem = (props) => {
   return (
     <tr>
       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-        {props.id + 1}
+        Post {props.message.id}
       </td>
       <td className="px-6 py-4 text-sm text-gray-500">
         <p className="break-normal ...">{props.message.content}...</p>
