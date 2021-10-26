@@ -48,6 +48,14 @@ const Footer = () => {
                   oponechukwuyenum@gmail.com
                 </a>
               </span>
+              <span className="my-2">
+                <a
+                  href="https://dashboard.yenum.dev/cv/chukwuyenum.pdf"
+                  className="text-blue-700  text-md hover:text-blue-500"
+                >
+                  Blog
+                </a>
+              </span>
             </div>
             <div className="flex flex-col">
               <span className="font-bold text-gray-700 uppercase mt-4 md:mt-0 mb-2">
@@ -67,7 +75,7 @@ const Footer = () => {
                   href="#"
                   className="text-blue-700  text-md hover:text-blue-500"
                 >
-                  Havard GD50
+                  Havard GD50 (Ongoing)
                 </a>
               </span>
               <span className="my-2">
@@ -76,7 +84,7 @@ const Footer = () => {
                   href="#"
                   className="text-blue-700  text-md hover:text-blue-500"
                 >
-                  Unity Badge
+                  Unity Badge (Ongoing)
                 </a>
               </span>
             </div>
