@@ -53,7 +53,7 @@ const Footer = () => {
                   href="https://dashboard.yenum.dev/cv/chukwuyenum.pdf"
                   className="text-blue-700  text-md hover:text-blue-500"
                 >
-                  Blog
+                  My CV
                 </a>
               </span>
             </div>
@@ -85,6 +85,15 @@ const Footer = () => {
                   className="text-blue-700  text-md hover:text-blue-500"
                 >
                   Unity Badge (Ongoing)
+                </a>
+              </span>
+              <span className="my-2">
+                {/* eslint-disable-next-line */}
+                <a
+                  href="#"
+                  className="text-blue-700  text-md hover:text-blue-500"
+                >
+                  Udacity - Nanodegree (Ongoing)
                 </a>
               </span>
             </div>
