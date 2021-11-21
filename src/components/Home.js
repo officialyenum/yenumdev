@@ -19,9 +19,16 @@ const Home = () => {
           </div>
           <div className="col-12">
             <p className="text-2xl text-gray-200 pt-12 cursive text-center">
-              Software Developer | Aspiring Game Programmer
+              Software Developer | Aspiring Game Programmer 
             </p>
           </div>
+          <br/>
+          <div className="col-12">
+            <span className="text-center">
+              <a href="https://wakatime.com/@13233379-b294-4919-aa78-a47fd8c24385"><img src="https://wakatime.com/badge/user/13233379-b294-4919-aa78-a47fd8c24385.svg" alt="Total time coded since Nov 20 2021" /></a>
+            </span>
+          </div>
+
           <div className="grid grid-cols-2 gap-6">
             <div className="col-start-1 col-end-4">
               <a
