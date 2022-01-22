@@ -90,10 +90,10 @@ const Footer = () => {
               <span className="my-2">
                 {/* eslint-disable-next-line */}
                 <a
-                  href="#"
+                  href="https://graduation.udacity.com/confirm/QGHK5USH"
                   className="text-blue-700  text-md hover:text-blue-500"
                 >
-                  Udacity - Nanodegree (Ongoing)
+                  Udacity - Nanodegree
                 </a>
               </span>
             </div>

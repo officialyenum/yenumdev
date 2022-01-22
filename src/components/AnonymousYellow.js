@@ -28,6 +28,7 @@ const AnonymousYellow = () => {
   );
   const [titleMessage, setTitleMessage] = useState("Anonymous Yellow");
   const [isError, setIsError] = useState(false);
+  
   const messageChangeHandler = (event) => {
     if (event.target.value.trim().length === 0) {
       setIsError(false);

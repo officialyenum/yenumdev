@@ -35,6 +35,7 @@ const AnonymousYellowList = () => {
   const [unPublished, setUnPublished] = useState(0);
 
   useEffect(() => {
+    
     fetch(`https://dashboard.yenum.dev/api/anonymous-yellow/${type}/all`)
       .then((response) => response.json())
       .then((data) => {
