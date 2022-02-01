@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import AnonymousYellowItem from "./AnonymousYellowItem";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
+import { Helmet } from "react-helmet";
 
 const TOKEN = "bot2081684117:AAEL-Fx3N7e_FZlQZ67KUQSKXA-cEJhaYaw";
 // const TEST_GROUP = -742245862;
@@ -35,7 +36,6 @@ const AnonymousYellowList = () => {
   const [unPublished, setUnPublished] = useState(0);
 
   useEffect(() => {
-    
     fetch(`https://dashboard.yenum.dev/api/anonymous-yellow/${type}/all`)
       .then((response) => response.json())
       .then((data) => {
@@ -191,120 +191,145 @@ const AnonymousYellowList = () => {
   };
 
   return (
-    <div className="hero-full-container background-image-container white-text-container showBGImage">
-      <main className="min-h-screen p-12">
-        <section className="container mx-auto">
-          <h1 className="text-5xl flex text-gray-200 justify-center cursive mt-2">
-            Dashboard
-          </h1>
-          <h2 className="text-lg text-gray-400 flex justify-center text-center mb-12">
-            Message List
-          </h2>
+    <>
+      <Helmet>
+        <title>Yenum.dev | Anonymous Yellow Dashboard</title>
+        <meta property="og:title" content="Anonymous Yellow" />
+        <meta
+          property="og:image"
+          content="https://media-exp1.licdn.com/dms/image/C5603AQHng9Yw9HfvoA/profile-displayphoto-shrink_200_200/0/1636095704799?e=1642032000&v=beta&t=IHfrbn1CzVPqwAU14FIpuQUrJf1QSKtCGsT2Et4xhFo"
+        />
+        <meta
+          property="og:description"
+          content="Anonymous Yellow is a game created to send anonymous messages to a telegram group via the anonymous yellow telegram bot"
+        />
+        <meta
+          name="description"
+          content="Anonymous Yellow is a game created to send anonymous messages to a telegram group via the anonymous yellow telegram bot"
+        />
+        <meta
+          property="og:url"
+          content="https://yenum.dev//anonymous/dashboard/publish/oreofe"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
+      <div className="hero-full-container background-image-container white-text-container showBGImage">
+        <main className="min-h-screen p-12">
+          <section className="container mx-auto">
+            <h1 className="text-5xl flex text-gray-200 justify-center cursive mt-2">
+              Dashboard
+            </h1>
+            <h2 className="text-lg text-gray-400 flex justify-center text-center mb-12">
+              Message List
+            </h2>
 
-          <div className="grid grid-cols-3 gap-4 mb-5">
-            <div>
-              <button onClick={updatePublished}>
-                <div className="text-center flex flex-col p-4 md:text-left md:flex-row md:items-center md:justify-between md:p-12 bg-green-100 rounded-md">
-                  <div className="text-1xl font-semibold">
-                    <div className="text-gray-900">Published Messages.</div>
-                  </div>
-                  <div className="mt-3 md:mt-0 md:ml-2">
-                    <div className="inline-block rounded-md text-lg font-semibold py-2 px-4 text-white bg-green-500">
-                      {published}
+            <div className="grid grid-cols-3 gap-4 mb-5">
+              <div>
+                <button onClick={updatePublished}>
+                  <div className="text-center flex flex-col p-4 md:text-left md:flex-row md:items-center md:justify-between md:p-12 bg-green-100 rounded-md">
+                    <div className="text-1xl font-semibold">
+                      <div className="text-gray-900">Published Messages.</div>
+                    </div>
+                    <div className="mt-3 md:mt-0 md:ml-2">
+                      <div className="inline-block rounded-md text-lg font-semibold py-2 px-4 text-white bg-green-500">
+                        {published}
+                      </div>
                     </div>
                   </div>
-                </div>
-              </button>
-            </div>
-            <div>
-              <button onClick={updateUnpublished}>
-                <div className="text-center flex flex-col p-4 md:text-left md:flex-row md:items-center md:justify-between md:p-12 bg-red-100 rounded-md">
-                  <div className="text-1xl font-semibold">
-                    <div className="text-gray-900">Unpublished Messages.</div>
-                  </div>
+                </button>
+              </div>
+              <div>
+                <button onClick={updateUnpublished}>
+                  <div className="text-center flex flex-col p-4 md:text-left md:flex-row md:items-center md:justify-between md:p-12 bg-red-100 rounded-md">
+                    <div className="text-1xl font-semibold">
+                      <div className="text-gray-900">Unpublished Messages.</div>
+                    </div>
 
-                  <div className="mt-3 md:mt-0 md:ml-2">
-                    <div className="inline-block rounded-md text-lg font-semibold py-2 px-4 text-white bg-red-500">
-                      {unPublished}
+                    <div className="mt-3 md:mt-0 md:ml-2">
+                      <div className="inline-block rounded-md text-lg font-semibold py-2 px-4 text-white bg-red-500">
+                        {unPublished}
+                      </div>
                     </div>
                   </div>
-                </div>
-              </button>
-            </div>
+                </button>
+              </div>
 
-            <div>
-              <button onClick={updateTotal}>
-                <div className="text-center flex flex-col p-4 md:text-left md:flex-row md:items-center md:justify-between md:p-12 bg-blue-100 rounded-md">
-                  <div className="text-1xl font-semibold">
-                    <div className="text-gray-900">All Messages.</div>
-                  </div>
+              <div>
+                <button onClick={updateTotal}>
+                  <div className="text-center flex flex-col p-4 md:text-left md:flex-row md:items-center md:justify-between md:p-12 bg-blue-100 rounded-md">
+                    <div className="text-1xl font-semibold">
+                      <div className="text-gray-900">All Messages.</div>
+                    </div>
 
-                  <div className="mt-3 md:mt-0 md:ml-2">
-                    <div className="inline-block rounded-md text-lg font-semibold py-2 px-4 text-white bg-blue-500">
-                      {published + unPublished}
+                    <div className="mt-3 md:mt-0 md:ml-2">
+                      <div className="inline-block rounded-md text-lg font-semibold py-2 px-4 text-white bg-blue-500">
+                        {published + unPublished}
+                      </div>
                     </div>
                   </div>
-                </div>
-              </button>
+                </button>
+              </div>
             </div>
-          </div>
-          {messages === null ? (
-            <div className="text-gray-100 text-center">
-              Loading... Please Wait...
-            </div>
-          ) : (
-            <div className="card-body">
-              <table id="table" className="min-w-full divide-y divide-gray-200">
-                <thead className="bg-gray-50">
-                  <tr>
-                    <th
-                      scope="col"
-                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                    >
-                      S/N
-                    </th>
-                    <th
-                      scope="col"
-                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                    >
-                      Messages
-                    </th>
-                    <th
-                      scope="col"
-                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                    >
-                      Date
-                    </th>
-                    <th
-                      scope="col"
-                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                    >
-                      Status
-                    </th>
-                    <th scope="col" className="relative px-6 py-3">
-                      <span className="sr-only">Action</span>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody className="bg-white divide-y divide-gray-200">
-                  {messages &&
-                    messages.map((message, index) => (
-                      <AnonymousYellowItem
-                        key={index}
-                        id={index}
-                        message={message}
-                        onPublish={publishToTelegram}
-                        onDelete={deleteMessage}
-                        showInModal={showItemModal}
-                      ></AnonymousYellowItem>
-                    ))}
-                </tbody>
-              </table>
-            </div>
-          )}
-        </section>
-      </main>
-      {/* {showModal ? (
+            {messages === null ? (
+              <div className="text-gray-100 text-center">
+                Loading... Please Wait...
+              </div>
+            ) : (
+              <div className="card-body">
+                <table
+                  id="table"
+                  className="min-w-full divide-y divide-gray-200"
+                >
+                  <thead className="bg-gray-50">
+                    <tr>
+                      <th
+                        scope="col"
+                        className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      >
+                        S/N
+                      </th>
+                      <th
+                        scope="col"
+                        className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      >
+                        Messages
+                      </th>
+                      <th
+                        scope="col"
+                        className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      >
+                        Date
+                      </th>
+                      <th
+                        scope="col"
+                        className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      >
+                        Status
+                      </th>
+                      <th scope="col" className="relative px-6 py-3">
+                        <span className="sr-only">Action</span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody className="bg-white divide-y divide-gray-200">
+                    {messages &&
+                      messages.map((message, index) => (
+                        <AnonymousYellowItem
+                          key={index}
+                          id={index}
+                          message={message}
+                          onPublish={publishToTelegram}
+                          onDelete={deleteMessage}
+                          showInModal={showItemModal}
+                        ></AnonymousYellowItem>
+                      ))}
+                  </tbody>
+                </table>
+              </div>
+            )}
+          </section>
+        </main>
+        {/* {showModal ? (
         <>
           <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
             <div className="relative w-auto my-6 mx-auto max-w-3xl">
@@ -342,7 +367,8 @@ const AnonymousYellowList = () => {
           <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
         </>
       ) : null} */}
-    </div>
+      </div>
+    </>
   );
 };
 

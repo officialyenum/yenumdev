@@ -1,5 +1,6 @@
 // import axios from "axios";
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 // const TOKEN = "bot2081684117:AAEL-Fx3N7e_FZlQZ67KUQSKXA-cEJhaYaw";
 // const AWC_GROUP = -1001152538944;
@@ -28,7 +29,7 @@ const AnonymousYellow = () => {
   );
   const [titleMessage, setTitleMessage] = useState("Anonymous Yellow");
   const [isError, setIsError] = useState(false);
-  
+
   const messageChangeHandler = (event) => {
     if (event.target.value.trim().length === 0) {
       setIsError(false);
@@ -96,44 +97,64 @@ const AnonymousYellow = () => {
   };
 
   return (
-    <div className="hero-full-container background-image-container white-text-container showBGImage">
-      <main className="min-h-screen p-12">
-        <section className="container mx-auto">
-          <h1 className="text-5xl flex text-gray-200 justify-center cursive mt-2">
-            Anonymous Yellow
-          </h1>
-          <h2 className="text-lg text-gray-400 flex justify-center text-center mb-12">
-            Drop your message in the box below and send
-          </h2>
-          <form onSubmit={formSubmitHandler}>
-            <label
-              className="text-lg text-gray-400 flex justify-center mb-12"
-              htmlFor="message"
-            >
-              Message
-            </label>
-            <textarea
-              id="message"
-              className="form-textarea mt-1 text-lg text-gray-400 flex justify-center rounded p-4 mb-12 block w-full"
-              rows="5"
-              cols="5"
-              placeholder="Enter Your Anonymous message here."
-              onChange={messageChangeHandler}
-              value={message}
-            ></textarea>
-            {/* <input className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" value="Jane Doe"> */}
-            <div className=" flex justify-center">
-              <button
-                className="flex shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
-                type="submit"
+    <>
+      <Helmet>
+        <title>Yenum.dev | Anonymous Yellow</title>
+        <meta property="og:title" content="Anonymous Yellow" />
+        <meta
+          property="og:image"
+          content="https://media-exp1.licdn.com/dms/image/C5603AQHng9Yw9HfvoA/profile-displayphoto-shrink_200_200/0/1636095704799?e=1642032000&v=beta&t=IHfrbn1CzVPqwAU14FIpuQUrJf1QSKtCGsT2Et4xhFo"
+        />
+        <meta
+          property="og:description"
+          content="Anonymous Yellow is a game created to send anonymous messages to a telegram group via the anonymous yellow telegram bot"
+        />
+        <meta
+          name="description"
+          content="Anonymous Yellow is a game created to send anonymous messages to a telegram group via the anonymous yellow telegram bot"
+        />
+        <meta property="og:url" content="https://yenum.dev/anonymous-yellow" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
+      <div className="hero-full-container background-image-container white-text-container showBGImage">
+        <main className="min-h-screen p-12">
+          <section className="container mx-auto">
+            <h1 className="text-5xl flex text-gray-200 justify-center cursive mt-2">
+              Anonymous Yellow
+            </h1>
+            <h2 className="text-lg text-gray-400 flex justify-center text-center mb-12">
+              Drop your message in the box below and send
+            </h2>
+            <form onSubmit={formSubmitHandler}>
+              <label
+                className="text-lg text-gray-400 flex justify-center mb-12"
+                htmlFor="message"
               >
-                Send to AWC
-              </button>
-            </div>
-          </form>
-        </section>
-      </main>
-    </div>
+                Message
+              </label>
+              <textarea
+                id="message"
+                className="form-textarea mt-1 text-lg text-gray-400 flex justify-center rounded p-4 mb-12 block w-full"
+                rows="5"
+                cols="5"
+                placeholder="Enter Your Anonymous message here."
+                onChange={messageChangeHandler}
+                value={message}
+              ></textarea>
+              {/* <input className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" value="Jane Doe"> */}
+              <div className=" flex justify-center">
+                <button
+                  className="flex shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                  type="submit"
+                >
+                  Send to AWC
+                </button>
+              </div>
+            </form>
+          </section>
+        </main>
+      </div>
+    </>
   );
 };
 

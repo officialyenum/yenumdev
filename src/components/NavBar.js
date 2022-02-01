@@ -35,7 +35,7 @@ const NavBar = () => {
                 <div className="flex-shrink-0 flex items-center">
                   <NavLink
                     to="/"
-                    className="block xs:hidden h-8 w-auto text-blue-500 hover:bg-gray-700 hover:rounded-md  pl-20 text-lg font-medium"
+                    className="block xs:hidden h-8 w-auto text-blue-500 hover:bg-gray-700 hover:text-white pl-20 text-lg px-3 ml-8 rounded-md font-medium"
                   >
                     Yenum Opone
                   </NavLink>
