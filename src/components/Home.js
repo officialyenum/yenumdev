@@ -89,6 +89,36 @@ const Home = () => {
           </div>
           <br />
         </section>
+        <section className="relative flex justify-center min-h-screen pt-32 md:pt-32 lg:pt-32 px-8">
+          <div className="row">
+            <div className="col-12">
+              <h1 className="text-6xl text-blue-500 text-center  font-bold cursive leading-none lg:leading-snug lg:home-name">
+                Ride 4 Life
+              </h1>
+            </div>
+            <div className="col-12">
+              <p className="text-2xl text-dark-500 pt-12 cursive text-center">
+                Built with Unity C# | Tap to play
+              </p>
+            </div>
+            <div className="col-12">
+              <iframe
+                id="webgl_iframe"
+                title="ride4life"
+                frameborder="0"
+                allow="autoplay; fullscreen; vr"
+                allowfullscreen="true"
+                allowvr="false"
+                mozallowfullscreen="true"
+                src="https://play.unity3dusercontent.com/webgl/d28277a3-d0bd-4712-b2f0-9c02441f4394?screenshot=false&embedType=embed"
+                width="405"
+                height="640"
+                onmousewheel=""
+                webkitallowfullscreen="true"
+              ></iframe>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );

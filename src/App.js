@@ -11,7 +11,6 @@ import AnonymousYellow from "./components/AnonymousYellow";
 import AnonymousYellowList from "./components/AnonymousYellowList";
 import NotFound from "./components/NotFound";
 
-
 function App() {
   return (
     <BrowserRouter basename="/">

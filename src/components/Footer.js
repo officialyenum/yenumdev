@@ -66,16 +66,16 @@ const Footer = () => {
                   href="https://certificates.cs50.io/dca861dc-1614-42ed-a59f-1b56949d851f"
                   className="text-blue-700  text-md hover:text-blue-500"
                 >
-                  Havard CS50
+                  Havard CS50 (Computer Science)
                 </a>
               </span>
               <span className="my-2">
                 {/* eslint-disable-next-line */}
                 <a
-                  href="#"
+                  href="https://certificates.cs50.io/72b4cc87-de7e-46ba-bc0f-783f128ea99c"
                   className="text-blue-700  text-md hover:text-blue-500"
                 >
-                  Havard GD50 (Ongoing)
+                  Havard GD50 (Game Development)
                 </a>
               </span>
               <span className="my-2">
