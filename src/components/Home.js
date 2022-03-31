@@ -1,5 +1,3 @@
-import {useEffect, useState} from "react";
-import IconBtn from "./UI/IconBtn";
 // import image from "../assets/images/portfolio.jpg";
 import { Helmet } from "react-helmet";
 

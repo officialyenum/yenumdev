@@ -36,16 +36,16 @@ const Home = () => {
             <div className="home__container container grid">
                 <div className="home__content grid">
                     <div className="home__social">
-                        <a href="https://www.linkedin.com/in/yenum" target="_blank" className="home__social-icon">
+                        <a href="https://www.linkedin.com/in/yenum" target="_blank" rel="noreferrer" className="home__social-icon">
                             <i className="uil uil-linkedin-alt"></i>
                         </a>
-                        <a href="https://www.github.com/officialyenum" target="_blank" className="home__social-icon">
+                        <a href="https://www.github.com/officialyenum" target="_blank" rel="noreferrer" className="home__social-icon">
                             <i className="uil uil-github-alt"></i>
                         </a>
-                        <a href="https://officialyenum.medium.com/" target="_blank" className="home__social-icon">
+                        <a href="https://officialyenum.medium.com/" target="_blank" rel="noreferrer" className="home__social-icon">
                             <i className="uil uil-medium-m"></i>
                         </a>
-                        <a href="https://www.twitter.com/officialyenum" target="_blank" className="home__social-icon">
+                        <a href="https://www.twitter.com/officialyenum" target="_blank" rel="noreferrer" className="home__social-icon">
                             <i className="uil uil-twitter-alt"></i>
                         </a>
                     </div>
