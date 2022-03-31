@@ -1,11 +1,8 @@
 // import axios from "axios";
-import React, { useState, useEffect } from "react";
-import img from "../../assets/images/portrait2.png"
+import React, { useState } from "react";
 import '../../Styles/Contact.css'
 import Swal from "sweetalert2";
-import withReactContent from "sweetalert2-react-content";
 
-const MySwal = withReactContent(Swal);
 const Toast = Swal.mixin({
   toast: true,
   position: "top-end",

@@ -10,7 +10,6 @@ const TopBar = () => {
   const [sections, setSections] = useState(null);
   const [themeButton, setThemeButton] = useState("")
   const [selectedTheme, setSelectedTheme] = useState("light");
-  const [selectedIcon, setSelectedIcon] = useState("uil-moon");
 
   useEffect(() => {
     setNavMenu(document.getElementById('nav-menu'))
@@ -20,12 +19,8 @@ const TopBar = () => {
     setSections(document.querySelectorAll('section[id'));
     setThemeButton(document.getElementById('theme-button'));
     setSelectedTheme(localStorage.getItem('selected-theme'));
-    setSelectedIcon(localStorage.getItem('selected-icon'));
     if (localStorage.getItem('selected-theme')) {
       setSelectedTheme(localStorage.getItem('selected-theme'));
-    }
-    if (localStorage.getItem('selected-icon')) {
-      setSelectedIcon(localStorage.getItem('selected-icon'));
     }
   }, [navMenu,navClose]);
   
@@ -102,14 +97,11 @@ const TopBar = () => {
         document.body.classList.add('light');
         document.body.classList.remove('dark-theme');
         localStorage.setItem('selected-theme','light');
-        console.log(localStorage.getItem('selected-theme'));
         setSelectedTheme(localStorage.getItem('selected-theme'));
 
         //change Icon
         themeButton.classList.add('uil-moon');
         themeButton.classList.remove('uil-sun');
-        localStorage.setItem('selected-icon','uil-moon')
-        setSelectedIcon(localStorage.getItem('selected-icon'));
     }else{
         document.body.classList.remove('light');
         document.body.classList.add('dark-theme');
@@ -117,12 +109,8 @@ const TopBar = () => {
         setSelectedTheme(localStorage.getItem('selected-theme'));
 
         //Change Icon
-
         themeButton.classList.add('uil-sun');
         themeButton.classList.remove('uil-moon');
-        localStorage.setItem('selected-icon','uil-sun')
-        console.log(localStorage.getItem('selected-icon'));
-        setSelectedIcon(localStorage.getItem('selected-icon'));
     }
   }
 

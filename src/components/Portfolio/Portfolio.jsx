@@ -1,5 +1,3 @@
-import {useState, useEffect} from 'react';
-import image from "../../assets/images/portfolio.jpg";
 import salonimage from "../../assets/images/app_360.png";
 import awcimage from "../../assets/images/app_awc.png";
 import diceimage from "../../assets/images/app_dice.png";
@@ -7,7 +5,7 @@ import epimage from "../../assets/images/app_enterprise.png";
 import mlimage from "../../assets/images/app_moneyline.png";
 // Styles must use direct files imports
 // Core modules imports are same as usual
-import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper';
+import { Navigation, Pagination } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/scss';
@@ -94,7 +92,7 @@ const Portfolio = () => {
                         <div className="portfolio__data">
                             <h3 className="portfolio__title">After work chills</h3>
                             <p className="portfolio__description">Social Community Platform. (Ongoing)</p>
-                            <a href="#" className="button button--flex button--small portfolio__button">
+                            <a href="#portfolio" className="button button--flex button--small portfolio__button">
                                 Demo
                                 <i className="uil uil-arrow-right button__icon"></i>
                             </a>
@@ -109,7 +107,7 @@ const Portfolio = () => {
                         <div className="portfolio__data">
                             <h3 className="portfolio__title">The Enterprise</h3>
                             <p className="portfolio__description">Hotel and Shortlet Investment and Management.</p>
-                            <a href="#" className="button button--flex button--small portfolio__button">
+                            <a href="https://theenterprisehotel.com/" className="button button--flex button--small portfolio__button">
                                 Demo
                                 <i className="uil uil-arrow-right button__icon"></i>
                             </a>

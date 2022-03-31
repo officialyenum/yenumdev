@@ -41,7 +41,7 @@ const About = () => {
                 </div>
 
                 <div className="about__buttons">
-                    <a href="#" className="button button-flex">
+                    <a href="#contact" className="button button-flex">
                         Download CV <i className="uil uil-download-alt button__icon"></i>
                     </a>
                 </div>
