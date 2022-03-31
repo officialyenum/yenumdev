@@ -1,6 +1,6 @@
-import React from "react";
+import {useEffect, useState} from "react";
 import IconBtn from "./UI/IconBtn";
-import image from "../assets/images/portfolio.jpg";
+// import image from "../assets/images/portfolio.jpg";
 import { Helmet } from "react-helmet";
 
 const Home = () => {
@@ -22,12 +22,12 @@ const Home = () => {
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
       <main>
-        <img
+        {/* <img
           src={image}
           alt="bg img"
           className="absolute object-cover w-full h-full"
-        />
-        <section className="relative flex justify-center min-h-screen pt-32 md:pt-32 lg:pt-32 px-8">
+        /> */}
+        {/* <section className="relative flex justify-center min-h-screen pt-32 md:pt-32 lg:pt-32 px-8">
           <div className="row">
             <div className="col-12">
               <h1 className="text-6xl text-blue-500 text-center  font-bold cursive leading-none lg:leading-snug lg:home-name">
@@ -89,6 +89,27 @@ const Home = () => {
           </div>
           <br />
         </section>
+
+        <section className="relative flex justify-center bg-dark min-h-screen pt-32 md:pt-32 lg:pt-32 px-8">
+          <div className="row">
+            <div className="col-12">
+              <h1 className="text-6xl text-blue-500 text-center  font-bold cursive leading-none lg:leading-snug lg:home-name">
+                Wakatime Stats
+              </h1>
+            </div>
+            <div className="col-12">
+              <div className ="col-6">
+              <a href="https://wakatime.com"><img src="https://wakatime.com/share/@officialyenum/6261e188-93e0-4cf9-b498-32181362e3e2.png" /></a>
+              </div>
+              <br />
+              <br />
+              <br />
+              <div className ="col-6">
+              <a href="https://wakatime.com"><img src="https://wakatime.com/share/@officialyenum/1c36889e-6cec-48ec-830b-fffb8644ae9b.png" /></a>
+              </div>
+            </div>
+          </div>
+        </section>
         <section className="relative flex justify-center min-h-screen pt-32 md:pt-32 lg:pt-32 px-8">
           <div className="row">
             <div className="col-12">
@@ -118,7 +139,7 @@ const Home = () => {
               ></iframe>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
     </>
   );

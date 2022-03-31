@@ -1,0 +1,24 @@
+@import "./Variables/Variables.scss";
+
+
+/*======Swiper======*/
+
+
+.swiper {
+    &-container &-pagination-testimonial{
+        bottom: 0;
+    }
+    
+    &-slide {
+        & img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-left: $mb-1-5;
+        }
+    }
+    
+    &-pagination-bullet-active{
+        background-color: $first-color;
+    }
+}

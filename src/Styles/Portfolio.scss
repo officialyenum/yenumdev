@@ -1,0 +1,58 @@
+@import "./Variables/Variables.scss";
+
+
+/*======Swiper======*/
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+
+    &-slide {
+        text-align: center;
+        font-size: 18px;
+    
+        /* Center slide text vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &-slide {
+        & img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+    }
+    &-button{
+        &-next, &-prev{
+            &::after{
+                content: "";
+            }
+        }
+        &-prev{
+            left: -.5rem;
+        }
+        &-next{
+            right: -.5rem;
+        }
+    }
+    &-portfolio{
+        &-icon{
+            font-size: 2rem;
+            color: var(--first-color);
+        }
+    }
+    &-container-horizontal > &-pagination-bullets{
+        bottom: -2.5rem;
+    }
+    &-pagination-bullet-active{
+        background-color: var(--first-color);
+    }
+    &-button-prev, &-button-next, &-pagination-bullet{
+        outline: none;
+    }
+}
+  
