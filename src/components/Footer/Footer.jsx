@@ -1,6 +1,3 @@
-// import {} from 'react'
-
-import img from "../../assets/images/portrait2.png"
 import '../../Styles/Footer.css'
 
 
@@ -11,7 +8,7 @@ const Footer = () => {
             <div className="footer__bg">
                 <div className="footer__container container grid">
                     <div>
-                        <h1 className="footer__title">Yenum</h1>
+                        <h1 className="footer__title">Yenum Opone</h1>
                         <span className="footer__subtitle">Software Developer</span>
                     </div>
                     <ul className="footer__links">
@@ -40,7 +37,7 @@ const Footer = () => {
                 <p className="footer__copy">&copy; Yenum. All right reserved.</p>
             </div>
         </footer>
-        <a href="#" className="scrollup" id="scroll-up">
+        <a href="#home" className="scrollup" id="scroll-up">
             <i className="uil uil-arrow-up scrollup__icon"></i>
         </a>
       </>
