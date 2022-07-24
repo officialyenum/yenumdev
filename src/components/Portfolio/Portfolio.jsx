@@ -3,6 +3,7 @@ import awcimage from "../../assets/images/app_awc.png";
 import diceimage from "../../assets/images/app_dice.png";
 import epimage from "../../assets/images/app_enterprise.png";
 import mlimage from "../../assets/images/app_moneyline.png";
+import gameimage from "../../assets/images/app_game_build.png";
 // Styles must use direct files imports
 // Core modules imports are same as usual
 import { Navigation, Pagination } from 'swiper';
@@ -42,6 +43,20 @@ const Portfolio = () => {
                 modules={[Navigation, Pagination]}
                 className="portfolio__container container swiper-container"
             >
+                <SwiperSlide>
+                    <div className="portfolio__content grid">
+                        <img src={gameimage} alt="" className='portfolio__img' />
+
+                        <div className="portfolio__data">
+                            <h3 className="portfolio__title">Yenum's Game Build</h3>
+                            <p className="portfolio__description">Portfolio Platform where i showcase Games Built by me.</p>
+                            <a href="https://games.yenum.dev" className="button button--flex button--small portfolio__button">
+                                Demo
+                                <i className="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </SwiperSlide>
                 <SwiperSlide>
                     <div className="portfolio__content grid">
                         <img src={diceimage} alt="" className='portfolio__img' />

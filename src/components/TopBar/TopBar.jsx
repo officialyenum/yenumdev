@@ -132,6 +132,16 @@ const TopBar = () => {
               </a>
             </li>
             <li className="nav__item">
+              <a href="https://games.yenum.dev" className='nav__link' rel='noreferrer' target="_blank">
+                <i className="uil uil-game-structure nav__icon"></i> Games
+              </a>
+            </li>
+            <li className="nav__item">
+              <a href="/#portfolio" className='nav__link'>
+                <i className="uil uil-scenery nav__icon"></i> Portfolio
+              </a>
+            </li>
+            <li className="nav__item">
               <a href="/#skills" className='nav__link'>
                 <i className="uil uil-file-alt nav__icon"></i> Skills
               </a>
@@ -139,11 +149,6 @@ const TopBar = () => {
             <li className="nav__item">
               <a href="/#services" className='nav__link'>
                 <i className="uil uil-briefcase-alt nav__icon"></i> Services
-              </a>
-            </li>
-            <li className="nav__item">
-              <a href="/#portfolio" className='nav__link'>
-                <i className="uil uil-scenery nav__icon"></i> Portfolio
               </a>
             </li>
             <li className="nav__item">

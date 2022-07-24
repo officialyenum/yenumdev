@@ -41,8 +41,8 @@ const About = () => {
                 </div>
 
                 <div className="about__buttons">
-                    <a href="#contact" className="button button-flex">
-                        Download CV <i className="uil uil-download-alt button__icon"></i>
+                    <a href="https://games.yenum.dev" className="button button-flex">
+                        Play My Games Here <i className="uil uil-game-structure button__icon"></i>
                     </a>
                 </div>
 
