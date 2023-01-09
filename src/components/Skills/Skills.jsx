@@ -40,7 +40,7 @@ const Skills = () => {
                         <i className="uil uil-brackets-curly skills__icon"></i>
                         <div>
                             <h1 className="skills__title">Frontend Developer</h1>
-                            <div className="skill__subtitle">More than 2 years</div>
+                            <div className="skill__subtitle">More than 3 years</div>
                         </div>
                         <i className="uil uil-angle-down skills__arrow"></i>
                     </div>
@@ -76,7 +76,7 @@ const Skills = () => {
                         <div className="skills">
                             <div className="skills__titles">
                                 <h3 className="skills__name">React</h3>
-                                <div className="skills__number">75%</div>
+                                <div className="skills__number">85%</div>
                             </div>
                             <div className="skills__bar">
                                 <span className="skills__percentage skills__react"></span>
@@ -90,7 +90,7 @@ const Skills = () => {
                         <i className="uil uil-server-network skills__icon"></i>
                         <div>
                             <h1 className="skills__title">Backend | DevOps Developer</h1>
-                            <div className="skill__subtitle">More than 3 years</div>
+                            <div className="skill__subtitle">More than 4 years</div>
                         </div>
                         <i className="uil uil-angle-down skills__arrow"></i>
                     </div>
@@ -107,7 +107,7 @@ const Skills = () => {
                         <div className="skills">
                             <div className="skills__titles">
                                 <h3 className="skills__name">Node JS</h3>
-                                <div className="skills__number">75%</div>
+                                <div className="skills__number">85%</div>
                             </div>
                             <div className="skills__bar">
                                 <span className="skills__percentage skills__node"></span>
@@ -147,7 +147,7 @@ const Skills = () => {
                         <div className="skills">
                             <div className="skills__titles">
                                 <h3 className="skills__name">Docker</h3>
-                                <div className="skills__number">45%</div>
+                                <div className="skills__number">65%</div>
                             </div>
                             <div className="skills__bar">
                                 <span className="skills__percentage skills__docker"></span>
@@ -156,7 +156,7 @@ const Skills = () => {
 
                         <div className="skills">
                             <div className="skills__titles">
-                                <h3 className="skills__name">Cloud : AWS | Digital Ocean</h3>
+                                <h3 className="skills__name">Cloud : AWS | Digital Ocean | Vercel</h3>
                                 <div className="skills__number">65%</div>
                             </div>
                             <div className="skills__bar">
@@ -188,7 +188,7 @@ const Skills = () => {
                         <div className="skills">
                             <div className="skills__titles">
                                 <h3 className="skills__name">Xcode Swift</h3>
-                                <div className="skills__number">65%</div>
+                                <div className="skills__number">70%</div>
                             </div>
                             <div className="skills__bar">
                                 <span className="skills__percentage skills__swift"></span>
@@ -212,7 +212,7 @@ const Skills = () => {
                         <i className="uil uil-swatchbook skills__icon"></i>
                         <div>
                             <h1 className="skills__title">UI/UX Designer</h1>
-                            <div className="skill__subtitle">More than a year</div>
+                            <div className="skill__subtitle">More than 2 years</div>
                         </div>
                         <i className="uil uil-angle-down skills__arrow"></i>
                     </div>
@@ -253,7 +253,7 @@ const Skills = () => {
                         <i className="uil uil-dice-six skills__icon"></i>
                         <div>
                             <h1 className="skills__title">Game Programmer</h1>
-                            <div className="skill__subtitle">More than 2 years</div>
+                            <div className="skill__subtitle">More than 3 years</div>
                         </div>
                         <i className="uil uil-angle-down skills__arrow"></i>
                     </div>
@@ -261,7 +261,7 @@ const Skills = () => {
                         <div className="skills">
                             <div className="skills__titles">
                                 <h3 className="skills__name">Unity</h3>
-                                <div className="skills__number">65%</div>
+                                <div className="skills__number">75%</div>
                             </div>
                             <div className="skills__bar">
                                 <span className="skills__percentage skills__unity"></span>
@@ -270,7 +270,7 @@ const Skills = () => {
                         <div className="skills">
                             <div className="skills__titles">
                                 <h3 className="skills__name">C#</h3>
-                                <div className="skills__number">65%</div>
+                                <div className="skills__number">75%</div>
                             </div>
                             <div className="skills__bar">
                                 <span className="skills__percentage skills__csharp"></span>

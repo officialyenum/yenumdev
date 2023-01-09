@@ -112,7 +112,7 @@ const Qualification = () => {
                             <div>
 
                             <h3 className="qualification__title">Software Engineer</h3>
-                                <span className="qualification__subtitle">Lordwin Group - Nigeria</span>
+                                <span className="qualification__subtitle">Lordwin Group - Nigeria (Full Time | Hybrid)</span>
                                 <div className="qualification__calender">
                                     <i className="uil uil-calendar-alt"></i>
                                     Feb 2019 - Mar 2021
@@ -123,7 +123,7 @@ const Qualification = () => {
                         <div className="qualification__data">
                             <div>
                                 <h3 className="qualification__title">Game Programmer</h3>
-                                <span className="qualification__subtitle">Smat Virtual - Nigeria</span>
+                                <span className="qualification__subtitle">Smat Virtual - Nigeria (Part Time | Remote)</span>
                                 <div className="qualification__calender">
                                     <i className="uil uil-calendar-alt"></i>
                                     Nov 2020 - till date
@@ -147,12 +147,28 @@ const Qualification = () => {
                             <div>
 
                             <h3 className="qualification__title">Lead Software Engineer</h3>
-                                <span className="qualification__subtitle">Lordwin Group - Nigeria</span>
+                                <span className="qualification__subtitle">Lordwin Group - Nigeria(Full Time | Hybrid)</span>
                                 <div className="qualification__calender">
                                     <i className="uil uil-calendar-alt"></i>
                                     Mar 2021 - till date
                                 </div>
                             </div>
+                        </div>
+                        {/*======== Qualification 4 ========*/}
+                        <div className="qualification__data">
+                            <div>
+                                <h3 className="qualification__title">Lead Backend Engineer</h3>
+                                <span className="qualification__subtitle">Ashiri - Nigeria (Part Time | Remote)</span>
+                                <div className="qualification__calender">
+                                    <i className="uil uil-calendar-alt"></i>
+                                    May 2022 - till date
+                                </div>
+                            </div>
+                            <div>
+                                <span className="qualification__rounder"></span>
+                                <span className="qualification__line"></span>
+                            </div>
+                            <div></div>
                         </div>
                     </div>
                 </div>
