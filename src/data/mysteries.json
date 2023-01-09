@@ -1,0 +1,149 @@
+[
+    {
+        "id":1,
+        "title": "Joyful Mysteries",
+        "days":["Monday", "Saturday"],
+        "decades": [
+            {
+                "id":1,
+                "title": "The Annunciation of Gabriel to Mary",
+                "bible_verse":"Luke 1:26-38",
+                "bible_reading":""
+            },
+            {
+                "id":2,
+                "title": "The Visitation of Mary to Elizabeth",
+                "bible_verse":"Luke 1:39-56",
+                "bible_reading":""
+            },
+            {
+                "id":3,
+                "title": "The Birth of Our Lord",
+                "bible_verse":"Luke 2:1-21",
+                "bible_reading":""
+            },
+            {
+                "id":4,
+                "title": "The Presentation of Our Lord",
+                "bible_verse":"Luke 2:22-38",
+                "bible_reading":""
+            },
+            {
+                "id":5,
+                "title": "The Finding of Our Lord in the Temple",
+                "bible_verse":"Luke 2:41-52",
+                "bible_reading":""
+            }
+        ]
+    },
+    {
+        "id":2,
+        "title": "Luminous Mysteries",
+        "days":["Thursday"],
+        "decades": [
+            {
+                "id":6,
+                "title": "The Baptism of Our Lord in the River Jordan ",
+                "bible_verse":"Matthew 3:13-16",
+                "bible_reading":""
+            },
+            {
+                "id":7,
+                "title": "The Wedding at Cana, when Christ manifested Himself ",
+                "bible_verse":"Jn 2:1-11",
+                "bible_reading":""
+            },
+            {
+                "id":8,
+                "title": "The Proclamation of the Kingdom of God",
+                "bible_verse":"Mark 1:14-15",
+                "bible_reading":""
+            },
+            {
+                "id":9,
+                "title": "The Transfiguration of Our Lord",
+                "bible_verse":"Matthew 17:1-8",
+                "bible_reading":""
+            },
+            {
+                "id":10,
+                "title": "The Last Supper, when Our Lord gave us the Holy Eucharist",
+                "bible_verse":"Mt 26",
+                "bible_reading":""
+            }
+        ]
+    },{
+        "id":3,
+        "title": "Sorrowful Mysteries",
+        "days":["Tuesday", "Friday"],
+        "decades": [
+            {
+                "id":11,
+                "title": "The Agony of Our Lord in the Garden",
+                "bible_verse":"Matthew 26:36-56",
+                "bible_reading":""
+            },
+            {
+                "id":12,
+                "title": "Our Lord is Scourged at the Pillar",
+                "bible_verse":"Matthew 27:26",
+                "bible_reading":""
+            },
+            {
+                "id":13,
+                "title": "Our Lord is Crowned with Thorns",
+                "bible_verse":"Matthew 27:27-31",
+                "bible_reading":""
+            },
+            {
+                "id":14,
+                "title": "Our Lord Carries the Cross to Calvary",
+                "bible_verse":"Matthew 27:32",
+                "bible_reading":""
+            },
+            {
+                "id":15,
+                "title": "The Crucifixion of Our Lord",
+                "bible_verse":"Matthew 27:33-56",
+                "bible_reading":""
+            }
+        ]
+    },
+    {
+        "id":4,
+        "title": "Glorious Mysteries",
+        "days":["Wednesday", "Sunday"],
+        "decades": [
+            {
+                "id":16,
+                "title": " The Glorious Resurrection of Our Lord",
+                "bible_verse":"John 20:1-29",
+                "bible_reading":""
+            },
+            {
+                "id":17,
+                "title": "The Ascension of Our Lord",
+                "bible_verse":"Luke 24:36-53",
+                "bible_reading":""
+            },
+            {
+                "id":18,
+                "title": "The Descent of the Holy Spirit at Pentecost",
+                "bible_verse":"Acts 2:1-41",
+                "bible_reading":""
+            },
+            {
+                "id":19,
+                "title": "The Assumption of Mary into Heaven",
+                "bible_verse":"",
+                "bible_reading":""
+            },
+            {
+                "id":10,
+                "title": "The Coronation of Mary as Queen of Heaven and Earth",
+                "bible_verse":"",
+                "bible_reading":""
+            }
+        ]
+    }
+]

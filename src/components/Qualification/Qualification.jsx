@@ -38,12 +38,12 @@ const Qualification = () => {
             <div className="qualification__container container grid">
                 <div className="qualification__tabs">
                     <div className="qualification__button button--flex qualification__active" data-target="#education">
-                        <i className="uil uil-graduation-cap quialification__icon"></i>
+                        <i className="uil uil-graduation-cap qualification__icon"></i>
                         Education
                     </div>
 
                     <div className="qualification__button button--flex"  data-target="#work">
-                        <i className="uil uil-briefcase-alt quialification__icon"></i>
+                        <i className="uil uil-briefcase-alt qualification__icon"></i>
                         Work Experience
                     </div>
                 </div>

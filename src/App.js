@@ -9,6 +9,7 @@ import Project from "./components/Project";
 import AnonymousYellowList from "./pages/AnonymousYellowAdmin";
 import NotFound from "./components/NotFound";
 import TopBar from "./components/TopBar/TopBar";
+import Rosary from "./pages/Rosary";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route component={SinglePost} path="/post/:slug" />
         <Route component={Post} path="/post" />
         <Route component={Project} path="/project" />
+        <Route component={Rosary} path="/rosary" />
         <Route component={AnonymousYellow} path="/anonymous-yellow" />
         <Route
           component={AnonymousYellowList}
