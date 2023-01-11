@@ -31,11 +31,11 @@ const About = () => {
                         <span className="about__info-name">Years<br/> experience</span>
                     </div>
                     <div>
-                        <span className="about__info-title">05+</span>
+                        <span className="about__info-title">10+</span>
                         <span className="about__info-name">Completed <br/> project</span>
                     </div>
                     <div>
-                        <span className="about__info-title">03+</span>
+                        <span className="about__info-title">04+</span>
                         <span className="about__info-name">Companies <br/> Worked</span>
                     </div>
                 </div>

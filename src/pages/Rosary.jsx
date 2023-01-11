@@ -23,16 +23,6 @@ const Rosary = () => {
     const [showRosary, setShowRosary] = useState(true);
     const [showPrayer, setShowPrayer] = useState(false);
     const [showMystery, setShowMystery] = useState(false);
-    const [tabs, setTabs] = useState(null);
-    const [tabContents, setTabContents] = useState(null);
-
-    useEffect(() => {
-        const setData = () => {
-            setTabs(document.querySelectorAll('[data-target]'));
-            setTabContents(document.querySelectorAll('[data-content]'));
-        }
-        setData();
-    }, []);
 
     const handleShowRosary = () => {
       setShowMystery(false);
@@ -50,23 +40,6 @@ const Rosary = () => {
       setShowPrayer(false);
       setShowRosary(false);
     }
-
-    if (tabs) {
-        tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                const target = document.querySelector(tab.dataset.target);
-                tabContents.forEach(tabContent => {
-                    tabContent.classList.remove('rosary__active');
-                });
-                tabs.forEach(tab => {
-                    tab.classList.remove('rosary__active');
-                });
-                target.classList.add('rosary__active');
-                // tab.classList.add('rosary__active');
-            })
-        });
-    }
-
 
 
 
@@ -92,8 +65,8 @@ const Rosary = () => {
       </Helmet>
       <main className="main">
         <section className='rosary section' id='rosary'>
-            <h2 className="section__title">The Holy Rosary</h2>
-            <span className="section__subtitle">Get Familiar with the rosary</span>
+            {/* <h2 className="section__title">The Holy Rosary</h2>
+            <span className="section__subtitle">Get Familiar with the rosary</span> */}
             <div className="rosary__container container grid">
                 <div className="rosary__tabs">
                     <div className={`rosary__button button--flex ${showRosary && "rosary__active"}`} onClick={handleShowRosary}>
@@ -102,7 +75,7 @@ const Rosary = () => {
                     </div>
 
                     <div className={`rosary__button button--flex ${showPrayer && "rosary__active"}`}  onClick={handleShowPrayer}>
-                        <i className="uil uil-briefcase-alt rosary__icon"></i>
+                        <i className="uil uil-church rosary__icon"></i>
                         Prayers
                     </div>
 

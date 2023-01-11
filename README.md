@@ -1,75 +1,64 @@
-# Getting Started with Create React App
+Yenum Dev Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Yenum Dev Portfolio implementation built with React, it also houses projects built by me, my journey as a developer and ways to reach me
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+-   [Technologies](#technologies)
+-   [Getting Started](#getting-started)
+    -   [Installation](#installation)
+    -   [Usage](#usage)
+    -   [Testing](#testing)
+    -   [Documentation](#documentation)
+    -   [Deployment](#deployment)
+    -   [Limitations](#limitations)
 
-### `npm start`
+## Technologies
+-   [React JS](https://reactjs.org/) - Runtime Environment
+-   [Create React App](https://create-react-app.dev/) - Create React App is an officially supported way to create single-page React applications. It offers a modern build setup with no configuration.
+-   [Telegram Bot Api](https://core.telegram.org/bots/api) - The Bot API is an HTTP-based interface created for developers keen on building bots for Telegram.
+-   [Sass](https://sass-lang.com/) -  Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Getting Started
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Installation
 
-### `npm test`
+-   git clone
+    [Yenum Dev Portfolio](https://github.com/officialyenum/yenumdev.git)
+-   Run `npm install` to install packages.
+-   Run `npm run start` to run the application in development mode.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This is the basic flow of the application.
+-   Anonymous Yellow. (Private Application, this enables my group of friends send anonymous message to our telegram group )
+-   About Me.
+-   My Skills.
+-   My Qualification.
+-   Services I Provide.
+-   List of Projects and Links to Demo.
+-   Contact Form to Send me a message.
+-   Light and Dark Mode
+-   The Holy Rosary Prayer Simulation (In Development)
+-   Catholic Prayers (In Development)
+-   The Holy Rosary Mysteries (In Development)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Testing
+-   No Test Implemented
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Documentation
+-   No Documentation 
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This project is hosted on [netlify](https://www.netlify.com/)
 
-### `npm run build` fails to minify
+-   Please click [here](https://yenum.dev) to access the hosted application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-
-<!-- <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <path fill="#BAE6FF" d="M54,-27C67.5,-7.8,74.2,19.4,64,36.5C53.9,53.6,27,60.5,-0.7,60.9C-28.3,61.2,-56.7,55.2,-65.4,38.9C-74.1,22.7,-63.2,-3.8,-49,-23.3C-34.9,-42.8,-17.4,-55.4,1.4,-56.2C20.3,-57.1,40.5,-46.1,54,-27Z" transform="translate(100 100)" />
-</svg> -->
+### Limitations
+- Caching is not implemented
+- Pagination is not implemented
+- Testing is not implemented
+- Documentation is not implemented
