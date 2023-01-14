@@ -13,6 +13,13 @@ const About = () => {
             <img src={img} alt="" className="about__img" />
             <div className="about__data">
                 <p className="about__description">
+                    I’ve accumulated deep experience with languages such as PHP, C#, JavaScript, Typescript, Dart, Python, HTML, CSS... 
+                    Currently I’m interested in Game development, Data Structures and Algorithms, Artificial intelligence, Payment Solutions... 
+                    <span>
+                        <br/>
+                        <br/>
+                    </span>
+                    Took a few professional certifications involving some of the above mentioned domains.
                     I try not to dwell on what i've already achieved, therefore i'm constantly learning something new in order to further develop in the chosen paths.
                     <span>
                         <br/>
@@ -27,7 +34,7 @@ const About = () => {
                 </p>
                 <div className="about__info">
                     <div>
-                        <span className="about__info-title">04+</span>
+                        <span className="about__info-title">05+</span>
                         <span className="about__info-name">Years<br/> experience</span>
                     </div>
                     <div>

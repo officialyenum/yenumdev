@@ -63,7 +63,7 @@ const Home = () => {
                     <div className="home__data">
                       <h1 className="home__title">Hi, I am Yenum</h1>
                       <h1 className="home__subtitle">Software Developer</h1>
-                      <p className="home__description">from Lagos, Nigeria. High Level experience in application design and development, data structure and algorithm expert, and an aspiring game developer</p>
+                      <p className="home__description">from Lagos, Nigeria... with over 5+ years of experience in multiple frameworks including Laravel, Unity, React, Node, Flutter... </p>
                       <a href="#contact" className="button button--flex">
                         Contact Me <i className="uil uil-message button_icon"></i>
                       </a>
