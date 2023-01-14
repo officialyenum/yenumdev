@@ -1,9 +1,5 @@
-import salonimage from "../../assets/images/app_360.png";
-import awcimage from "../../assets/images/app_awc.png";
-import diceimage from "../../assets/images/app_dice.png";
-import epimage from "../../assets/images/app_enterprise.png";
-import mlimage from "../../assets/images/app_moneyline.png";
-import gameimage from "../../assets/images/app_game_build.png";
+import React from 'react';
+import projectsList from "../../data/projects.json";
 // Styles must use direct files imports
 // Core modules imports are same as usual
 import { Navigation, Pagination } from 'swiper';
@@ -43,92 +39,23 @@ const Portfolio = () => {
                 modules={[Navigation, Pagination]}
                 className="portfolio__container container swiper-container"
             >
-                <SwiperSlide>
-                    <div className="portfolio__content grid">
-                        <img src={gameimage} alt="" className='portfolio__img' />
+                {projectsList && projectsList.map((project, index) => (
+                    <SwiperSlide key={index}>
+                        <div className="portfolio__content grid">
+                            <img src={project.src} alt="" className='portfolio__img' />
 
-                        <div className="portfolio__data">
-                            <h3 className="portfolio__title">Yenum's Game Build</h3>
-                            <p className="portfolio__description">Portfolio Platform where i showcase Games Built by me.</p>
-                            <a href="https://games.yenum.dev" className="button button--flex button--small portfolio__button">
-                                Demo
-                                <i className="uil uil-arrow-right button__icon"></i>
-                            </a>
+                            <div className="portfolio__data">
+                                <h3 className="portfolio__title">{project.title}</h3>
+                                <p className="portfolio__description">{project.description}</p>
+                                <a href={project.url} className="button button--flex button--small portfolio__button">
+                                    Demo
+                                    <i className="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="portfolio__content grid">
-                        <img src={diceimage} alt="" className='portfolio__img' />
-
-                        <div className="portfolio__data">
-                            <h3 className="portfolio__title">Dice.Ng</h3>
-                            <p className="portfolio__description">Virtual Web Gaming Platform.</p>
-                            <a href="https://dice.ng" className="button button--flex button--small portfolio__button">
-                                Demo
-                                <i className="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="portfolio__content grid">
-                        <img src={salonimage} alt="" className='portfolio__img' />
-
-                        <div className="portfolio__data">
-                            <h3 className="portfolio__title">360 Le Salon</h3>
-                            <p className="portfolio__description">Business, Payment & Staff Management System.</p>
-                            <a href="https://360lesalon.com" className="button button--flex button--small portfolio__button">
-                                Demo
-                                <i className="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="portfolio__content grid">
-                        <img src={mlimage} alt="" className='portfolio__img' />
-
-                        <div className="portfolio__data">
-                            <h3 className="portfolio__title">Money Line</h3>
-                            <p className="portfolio__description">Loan Management System. (Ongoing)</p>
-                            <a href="https://moneyline.ng" className="button button--flex button--small portfolio__button">
-                                Demo
-                                <i className="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="portfolio__content grid">
-                        
-                        <img src={awcimage} alt="" className='portfolio__img' />
-
-                        <div className="portfolio__data">
-                            <h3 className="portfolio__title">After work chills</h3>
-                            <p className="portfolio__description">Social Community Platform. (Ongoing)</p>
-                            <a href="#portfolio" className="button button--flex button--small portfolio__button">
-                                Demo
-                                <i className="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="portfolio__content grid">
-                        
-                        <img src={epimage} alt="" className='portfolio__img' />
-
-                        <div className="portfolio__data">
-                            <h3 className="portfolio__title">The Enterprise</h3>
-                            <p className="portfolio__description">Hotel and Shortlet Investment and Management.</p>
-                            <a href="https://theenterprisehotel.com/" className="button button--flex button--small portfolio__button">
-                                Demo
-                                <i className="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </SwiperSlide>
+                    </SwiperSlide>
+                    )
+                )}
 
                 <div className="swiper-button-next">
                     <i className="uil uil-angle-right-b swiper-portfolio-icon"></i>

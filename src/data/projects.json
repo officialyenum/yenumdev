@@ -1,0 +1,58 @@
+[
+    {
+        "id":1,
+        "src":"https://res.cloudinary.com/yenum-dev/image/upload/v1673728771/chuckymagic/app_game_build_uw9ay5.png",
+        "title": "Yenum's Game Build",
+        "description": "Portfolio Platform where i showcase Games Built by me.",
+        "url": "https://games.yenum.dev"
+    },
+    {
+        "id":2,
+        "src":"https://res.cloudinary.com/yenum-dev/image/upload/v1673729272/chuckymagic/ashiri_app_gpuiqy.png",
+        "title": "Ashiri API",
+        "description": "Ashiri is a new age digital saving system, curated from the traditional ajo system and this endpoints will be used to power the frontend applications.",
+        "url": "https://documenter.getpostman.com/view/19958501/UyxdLp3C"
+    },
+    {
+        "id":3,
+        "src":"https://res.cloudinary.com/yenum-dev/image/upload/v1673728770/chuckymagic/app_dice_rrrhht.png",
+        "title": "Dice.Ng",
+        "description": "Virtual Web Gaming Platform.",
+        "url": "https://dice.ng"
+    },
+    {
+        "id":3,
+        "src":"https://res.cloudinary.com/yenum-dev/image/upload/v1673729466/chuckymagic/article_app_e30kbl.png",
+        "title": "Article App",
+        "description": "This is a CMS Type Application built with laravel and livewire",
+        "url": "http://article-app.herokuapp.com/login"
+    },
+    {
+        "id":4,
+        "src":"https://res.cloudinary.com/yenum-dev/image/upload/v1673728762/chuckymagic/app_360_tzwzvp.png",
+        "title": "360 Le Salon",
+        "description": "Business, Payment & Staff Management System.",
+        "url": "https://360lesalon.com"
+    },
+    {
+        "id":5,
+        "src":"https://res.cloudinary.com/yenum-dev/image/upload/v1673728764/chuckymagic/app_moneyline_d3mk0w.png",
+        "title": "Money Line",
+        "description": "Loan Management System. (Ongoing)",
+        "url": "https://moneyline.ng"
+    },
+    {
+        "id":6,
+        "src":"https://res.cloudinary.com/yenum-dev/image/upload/v1673728767/chuckymagic/app_awc_dvuzrz.png",
+        "title": "After work chills",
+        "description": "Social Community Platform. (Ongoing)",
+        "url": "#portfolio"
+    },
+    {
+        "id":7,
+        "src":"https://res.cloudinary.com/yenum-dev/image/upload/v1673728764/chuckymagic/app_enterprise_ih0nzz.png",
+        "title": "The Enterprise",
+        "description": "Hotel and Shortlet Investment and Management.",
+        "url": "https://theenterprisehotel.com/"
+    }
+]
