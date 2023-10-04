@@ -13,12 +13,17 @@ const About = () => {
             <img src={img} alt="" className="about__img" />
             <div className="about__data">
                 <p className="about__description">
+                    My journey has been one of exploration, innovation, pushing boundaries, and crafting immersive experiences in the world of technology and gaming.
+                    <span>
+                        <br/>
+                        <br/>
+                    </span>
                     Currently, I'm further enhancing my skills in Unreal Engine and C++ through my ongoing MSc in Computer Games Programming at Teesside University.
                     <span>
                         <br/>
                         <br/>
                     </span>
-                    Expertise in: Node (JavaScript/TypeScript), Nest, Laravel (PHP), Next.js, Unity, Phaser, Logic Programming, Test Driven Development, Github Actions, Docker, AWS (EC2, S3, RDS), Laravel Forge, Python, Git, MongoDB, MySQL, PostgreSQL, Unreal Engine, C++, among others
+                    Expertise in: Node (JavaScript/TypeScript), Nest, Laravel (PHP), Next.js, Unity, C#, Unreal Engine, C++, among others
                     I try not to dwell on what i've already achieved, therefore i'm constantly learning something new in order to further develop in the chosen paths.
                     <span>
                         <br/>

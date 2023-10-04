@@ -62,10 +62,10 @@ const Home = () => {
                     </div>
                     <div className="home__data">
                       <h1 className="home__title">Hi, I am Yenum</h1>
-                      <h1 className="home__subtitle">Programmer</h1>
+                      <h1 className="home__subtitle">Game Programmer</h1>
                       <p className="home__description">
-                        an accomplished software and game programmer with over half a decade of enriching industry experience. My journey has been one of exploration, innovation, pushing boundaries, and crafting immersive experiences in the world of technology and gaming.
-                        </p>
+                        an accomplished software and game programmer with over half a decade of enriching industry experience. 
+                      </p>
                       <a href="#contact" className="button button--flex">
                         Contact Me <i className="uil uil-message button_icon"></i>
                       </a>
