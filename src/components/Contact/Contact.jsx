@@ -125,6 +125,8 @@ const Contact = () => {
                     </div>
                 </div>
                 <form action="" className="contact__form grid" onSubmit={formSubmitHandler}>
+
+                    <span style={{color: "red", fontSize: "9px" }}>Form temporarily Unavailable Send and Email Instead</span>
                     <div className="contact__inputs grid">
                         <div className="contact__content">
                             <label htmlFor="name" className="contact__label">Name</label>
