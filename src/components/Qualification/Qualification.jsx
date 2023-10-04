@@ -99,69 +99,67 @@ const Qualification = () => {
                             </div>
                             <div></div>
                         </div>
+                        {/*======== Qualification 4 ========*/}
+                        <div className="qualification__data">
+                            <div></div>
+                            <div>
+                                <span className="qualification__rounder"></span>
+                                <span className="qualification__line"></span>
+                            </div>
+                            <div>
+                                <h3 className="qualification__title">Computer Games Programming</h3>
+                                <span className="qualification__subtitle">Teesside University</span>
+                                <div className="qualification__calender">
+                                    <i className="uil uil-calendar-alt"></i>
+                                    July 2024 (In Progress)
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     {/*======== Qualification Content 2 ========*/}
                     <div className="qualification__content" data-content id="work">
                         {/*======== Qualification 1 ========*/}
                         <div className="qualification__data">
-                            <div></div>
+                            <div>
+                                <h3 className="qualification__title">Lead Software Engineer</h3>
+                                <span className="qualification__subtitle">Lordwin Group(Dice.NG) - Nigeria (Full Time | Hybrid)</span>
+                                <div className="qualification__calender">
+                                    <i className="uil uil-calendar-alt"></i>
+                                    Feb 2012 - Feb 2023
+                                </div>
+                            </div>
                             <div>
                                 <span className="qualification__rounder"></span>
                                 <span className="qualification__line"></span>
                             </div>
-                            <div>
-
-                            <h3 className="qualification__title">Software Engineer</h3>
-                                <span className="qualification__subtitle">Lordwin Group - Nigeria (Full Time | Hybrid)</span>
-                                <div className="qualification__calender">
-                                    <i className="uil uil-calendar-alt"></i>
-                                    Feb 2019 - Mar 2021
-                                </div>
-                            </div>
+                            <div></div>
                         </div>
                         {/*======== Qualification 2 ========*/}
                         <div className="qualification__data">
-                            <div>
-                                <h3 className="qualification__title">Game Programmer</h3>
-                                <span className="qualification__subtitle">Smat Virtual - Nigeria (Part Time | Remote)</span>
-                                <div className="qualification__calender">
-                                    <i className="uil uil-calendar-alt"></i>
-                                    Nov 2020 - till date
-                                </div>
-                            </div>
+                            <div></div>
                             <div>
                                 <span className="qualification__rounder"></span>
                                 <span className="qualification__line"></span>
                             </div>
-                            <div></div>
-                        </div>
-
-                        {/*======== Qualification 3 ========*/}
-
-                        <div className="qualification__data">
-                            <div></div>
-                            <div>
-                                <span className="qualification__rounder"></span>
-                                {/* <span className="qualification__line"></span> */}
-                            </div>
                             <div>
 
-                            <h3 className="qualification__title">Lead Software Engineer</h3>
-                                <span className="qualification__subtitle">Lordwin Group - Nigeria(Full Time | Hybrid)</span>
-                                <div className="qualification__calender">
-                                    <i className="uil uil-calendar-alt"></i>
-                                    Mar 2021 - till date
-                                </div>
-                            </div>
-                        </div>
-                        {/*======== Qualification 4 ========*/}
-                        <div className="qualification__data">
-                            <div>
-                                <h3 className="qualification__title">Lead Backend Engineer</h3>
+                            <h3 className="qualification__title">Lead Backend Engineer</h3>
                                 <span className="qualification__subtitle">Ashiri - Nigeria (Part Time | Remote)</span>
                                 <div className="qualification__calender">
                                     <i className="uil uil-calendar-alt"></i>
-                                    May 2022 - till date
+                                    May 2022 - Present
+                                </div>
+                            </div>
+                        </div>
+                        
+                        {/*======== Qualification 3 ========*/}
+                        <div className="qualification__data">
+                            <div>
+                                <h3 className="qualification__title">Senior Backend Programmer</h3>
+                                <span className="qualification__subtitle">Sports Book Engine - Nigeria (Contract | Remote)</span>
+                                <div className="qualification__calender">
+                                    <i className="uil uil-calendar-alt"></i>
+                                    Jul 2022 - present
                                 </div>
                             </div>
                             <div>

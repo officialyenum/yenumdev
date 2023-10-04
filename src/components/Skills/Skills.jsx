@@ -260,8 +260,27 @@ const Skills = () => {
                     <div className="skills__list grid">
                         <div className="skills">
                             <div className="skills__titles">
-                                <h3 className="skills__name">Unity</h3>
+                                <h3 className="skills__name">Unreal Engine</h3>
+                                <div className="skills__number">55%</div>
+                            </div>
+                            <div className="skills__bar">
+                                <span className="skills__percentage skills__unreal"></span>
+                            </div>
+                        </div>
+
+                        <div className="skills">
+                            <div className="skills__titles">
+                                <h3 className="skills__name">C++</h3>
                                 <div className="skills__number">75%</div>
+                            </div>
+                            <div className="skills__bar">
+                                <span className="skills__percentage skills__cplusplus"></span>
+                            </div>
+                        </div>
+                        <div className="skills">
+                            <div className="skills__titles">
+                                <h3 className="skills__name">Unity</h3>
+                                <div className="skills__number">65%</div>
                             </div>
                             <div className="skills__bar">
                                 <span className="skills__percentage skills__unity"></span>
@@ -270,10 +289,19 @@ const Skills = () => {
                         <div className="skills">
                             <div className="skills__titles">
                                 <h3 className="skills__name">C#</h3>
-                                <div className="skills__number">75%</div>
+                                <div className="skills__number">65%</div>
                             </div>
                             <div className="skills__bar">
                                 <span className="skills__percentage skills__csharp"></span>
+                            </div>
+                        </div>
+                        <div className="skills">
+                            <div className="skills__titles">
+                                <h3 className="skills__name">Phaser</h3>
+                                <div className="skills__number">65%</div>
+                            </div>
+                            <div className="skills__bar">
+                                <span className="skills__percentage skills__phaser"></span>
                             </div>
                         </div>
                         <div className="skills">

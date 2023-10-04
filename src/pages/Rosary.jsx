@@ -29,6 +29,7 @@ const Rosary = () => {
       setShowPrayer(false);
       setShowRosary(true);
     }
+    
     const handleShowPrayer = () => {
       setShowMystery(false);
       setShowPrayer(true);

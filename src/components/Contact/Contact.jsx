@@ -148,7 +148,7 @@ const Contact = () => {
                             onChange={e=>setMessage(e.target.value)}></textarea>
                     </div>
                     <div>
-                        <button type="submit" className="button button--flex button--small-success">
+                        <button type="submit" className="button button--flex button--small-success" disabled>
                             Send Message
                             <i className="uil uil-message contact__icon"></i>
                         </button>

@@ -13,13 +13,12 @@ const About = () => {
             <img src={img} alt="" className="about__img" />
             <div className="about__data">
                 <p className="about__description">
-                    I’ve accumulated deep experience with languages such as PHP, C#, JavaScript, Typescript, Dart, Python, HTML, CSS... 
-                    Currently I’m interested in Game development, Data Structures and Algorithms, Artificial intelligence, Payment Solutions... 
+                    Currently, I'm further enhancing my skills in Unreal Engine and C++ through my ongoing MSc in Computer Games Programming at Teesside University.
                     <span>
                         <br/>
                         <br/>
                     </span>
-                    Took a few professional certifications involving some of the above mentioned domains.
+                    Expertise in: Node (JavaScript/TypeScript), Nest, Laravel (PHP), Next.js, Unity, Phaser, Logic Programming, Test Driven Development, Github Actions, Docker, AWS (EC2, S3, RDS), Laravel Forge, Python, Git, MongoDB, MySQL, PostgreSQL, Unreal Engine, C++, among others
                     I try not to dwell on what i've already achieved, therefore i'm constantly learning something new in order to further develop in the chosen paths.
                     <span>
                         <br/>
@@ -48,7 +47,7 @@ const About = () => {
                 </div>
 
                 <div className="about__buttons">
-                    <a href="https://games.yenum.dev" className="button button-flex">
+                    <a href="https://play.unity.com/u/officialyenum" className="button button-flex">
                         Play My Games Here <i className="uil uil-game-structure button__icon"></i>
                     </a>
                 </div>
