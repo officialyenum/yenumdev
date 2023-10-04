@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className="footer__container container grid">
                     <div>
                         <h1 className="footer__title">Yenum Opone</h1>
-                        <span className="footer__subtitle">Software Developer</span>
+                        <span className="footer__subtitle">Game Programmer</span>
                     </div>
                     <ul className="footer__links">
                         <li>
@@ -34,7 +34,7 @@ const Footer = () => {
                         </a>
                     </div>
                 </div>
-                <p className="footer__copy">&copy; Yenum. All right reserved.</p>
+                <p className="footer__copy">&copy; Yenum. All rights reserved.</p>
             </div>
         </footer>
         <a href="#home" className="scrollup" id="scroll-up">
