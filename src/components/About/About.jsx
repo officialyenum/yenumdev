@@ -16,22 +16,21 @@ const About = () => {
                     My journey has been one of exploration, innovation, pushing boundaries, and crafting immersive experiences in the world of technology and gaming.
                     <span>
                         <br/>
-                        <br/>
                     </span>
                     Currently, I'm further enhancing my skills in Unreal Engine and C++ through my ongoing MSc in Computer Games Programming at Teesside University.
                     <span>
                         <br/>
-                        <br/>
                     </span>
-                    Expertise in: Node (JavaScript/TypeScript), Nest, Laravel (PHP), Next.js, Unity, C#, Unreal Engine, C++, among others
-                    I try not to dwell on what i've already achieved, therefore i'm constantly learning something new in order to further develop in the chosen paths.
+                    Expertise in: Node (JavaScript/TypeScript), Nest, Laravel (PHP), Next.js, Unity, C#, Unreal Engine, C++, among others.
                     <span>
                         <br/>
+                    </span>
+                    I try not to dwell on what i've already achieved, therefore i'm constantly learning something new in order to further develop in the chosen paths.
+                    <span>
                         <br/>
                     </span>
                     I also write about my journey on medium when i can, and i am a big fan of the Pirate Monkey D. Luffy from the One Piece Anime. 
                     <span>
-                        <br/>
                         <br/>
                     </span>
                     Arsenal is the best footbal club in the world. 🔴 ⚪
