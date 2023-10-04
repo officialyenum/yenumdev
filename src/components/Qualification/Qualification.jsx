@@ -125,7 +125,7 @@ const Qualification = () => {
                                 <span className="qualification__subtitle">Lordwin Group(Dice.NG) - Nigeria (Full Time | Hybrid)</span>
                                 <div className="qualification__calender">
                                     <i className="uil uil-calendar-alt"></i>
-                                    Feb 2012 - Feb 2023
+                                    Feb 2019 - Feb 2023
                                 </div>
                             </div>
                             <div>
@@ -151,7 +151,7 @@ const Qualification = () => {
                                 </div>
                             </div>
                         </div>
-                        
+
                         {/*======== Qualification 3 ========*/}
                         <div className="qualification__data">
                             <div>
