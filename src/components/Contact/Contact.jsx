@@ -131,7 +131,7 @@ const Contact = () => {
                         <div className="contact__content">
                             <label htmlFor="name" className="contact__label">Name</label>
                             <input 
-                            type="text" 
+                            type="text"
                             className="contact__input"
                             onChange={e=>setName(e.target.value)}/>
                         </div>
