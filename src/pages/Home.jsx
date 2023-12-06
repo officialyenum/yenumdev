@@ -3,8 +3,6 @@ import About from "../components/About/About";
 import Portfolio from "../components/Portfolio/Portfolio";
 import Project from "../components/Project/Project";
 import Qualification from "../components/Qualification/Qualification";
-import Services from "../components/Services/Services";
-import Skills from "../components/Skills/Skills";
 import portrait from "../assets/images/prefil.png"
 
 import '../Styles/Home.css';
