@@ -13,7 +13,7 @@ const About = () => {
             <img src={img} alt="" className="about__img" />
             <div className="about__data">
                 <p className="about__description">
-                    🎓 Currently, I'm advancing my skills in Unreal Engine, Blueprint, Gameplay programming, AI programming for Games, OpenGL, and C++ through my ongoing MSc in Computer Games Programming at Teesside University.
+                    🎓 Currently, I'm advancing my skills in Unreal Engine, Blueprint, Gameplay & AI programming for Games, OpenGL, and C++ through my ongoing MSc in Computer Games Programming at Teesside University.
                     <span>
                         <br/>
                     </span>
