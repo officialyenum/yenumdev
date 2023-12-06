@@ -17,23 +17,26 @@ const About = () => {
                     <span>
                         <br/>
                     </span>
-                    Currently, I'm further enhancing my skills in Unreal Engine and C++ through my ongoing MSc in Computer Games Programming at Teesside University.
+                    🎓 Currently, I'm advancing my skills in Unreal Engine, Blueprint, Gameplay programming, AI programming for Games, OpenGL, and C++ through my ongoing MSc in Computer Games Programming at Teesside University.
                     <span>
                         <br/>
                     </span>
-                    Expertise in: Node (JavaScript/TypeScript), Nest, Laravel (PHP), Next.js, Unity, C#, Unreal Engine, C++, among others.
+                    💻 Skill Set:
                     <span>
                         <br/>
                     </span>
-                    I try not to dwell on what i've already achieved, therefore i'm constantly learning something new in order to further develop in the chosen paths.
+
+                    - Game Programming: Excellence in Unreal Engine 5 using C++, and Unity using C#.
+                    - Web App Programming: Proficient in Laravel using PHP, and NestJS using TypeScript.
+                   <span>
+                        <br/>
+                    </span>
+                    - Graphics Programming: Strong foundation in OpenGL, DirectX11, and C++.
+                    - AI Programming: Extensive experience with OpenAI, Cohere, and AI21 Labs, utilizing Python, Typescript, or C++.
                     <span>
                         <br/>
                     </span>
-                    I also write about my journey on medium when i can, and i am a big fan of the Pirate Monkey D. Luffy from the One Piece Anime. 
-                    <span>
-                        <br/>
-                    </span>
-                    Arsenal is the best footbal club in the world. 🔴 ⚪
+                    This diverse skill set uniquely positions me for projects that demand a seamless blend of web development, game programming, graphics programming, and AI integration. Let's connect and explore the possibilities of crafting cutting-edge solutions together! 🌐🚀
                 </p>
                 <div className="about__info">
                     <div>

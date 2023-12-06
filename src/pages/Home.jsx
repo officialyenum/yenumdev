@@ -64,7 +64,7 @@ const Home = () => {
                       <h1 className="home__title">Hi, I am Yenum</h1>
                       <h1 className="home__subtitle">Game Programmer</h1>
                       <p className="home__description">
-                        an accomplished software and game programmer with over half a decade of enriching industry experience. 
+                      An accomplished software and game programmer with over half a decade of enriching industry experience. 
                       </p>
                       <a href="#contact" className="button button--flex">
                         Contact Me <i className="uil uil-message button_icon"></i>
@@ -81,9 +81,9 @@ const Home = () => {
             </div>
         </section>
         <About/>
-        <Skills/>
+        {/* <Skills/> */}
         <Qualification/>
-        <Services/>
+        {/* <Services/> */}
         <Portfolio/>
         <Project/>
         <Contact/>
