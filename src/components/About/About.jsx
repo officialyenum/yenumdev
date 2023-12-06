@@ -13,10 +13,6 @@ const About = () => {
             <img src={img} alt="" className="about__img" />
             <div className="about__data">
                 <p className="about__description">
-                    My journey has been one of exploration, innovation, pushing boundaries, and crafting immersive experiences in the world of technology and gaming.
-                    <span>
-                        <br/>
-                    </span>
                     🎓 Currently, I'm advancing my skills in Unreal Engine, Blueprint, Gameplay programming, AI programming for Games, OpenGL, and C++ through my ongoing MSc in Computer Games Programming at Teesside University.
                     <span>
                         <br/>
@@ -25,15 +21,22 @@ const About = () => {
                     <span>
                         <br/>
                     </span>
-
                     - Game Programming: Excellence in Unreal Engine 5 using C++, and Unity using C#.
+                    <span>
+                        <br/>
+                    </span>
+
                     - Web App Programming: Proficient in Laravel using PHP, and NestJS using TypeScript.
                    <span>
                         <br/>
                     </span>
                     - Graphics Programming: Strong foundation in OpenGL, DirectX11, and C++.
+                    <span>
+                        <br/>
+                    </span>
                     - AI Programming: Extensive experience with OpenAI, Cohere, and AI21 Labs, utilizing Python, Typescript, or C++.
                     <span>
+                        <br/>
                         <br/>
                     </span>
                     This diverse skill set uniquely positions me for projects that demand a seamless blend of web development, game programming, graphics programming, and AI integration. Let's connect and explore the possibilities of crafting cutting-edge solutions together! 🌐🚀
