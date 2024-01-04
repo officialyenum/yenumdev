@@ -13,7 +13,7 @@ const About = () => {
             <img src={img} alt="" className="about__img" />
             <div className="about__data">
                 <p className="about__description">
-                    🎓 Currently, I'm advancing my skills in Unreal Engine, Blueprint, Gameplay & AI programming for Games, OpenGL, and C++ through my ongoing MSc in Computer Games Programming at Teesside University.
+                    🎓 Currently, I'm advancing my skills in Unreal Engine, Blueprint, Gameplay & AI programming for Games, OpenGL, DirectX, and C++ through my ongoing MSc in Computer Games Programming at Teesside University.
                     <span>
                         <br/>
                     </span>
@@ -57,8 +57,8 @@ const About = () => {
                 </div>
 
                 <div className="about__buttons">
-                    <a href="https://play.unity.com/u/officialyenum" className="button button-flex">
-                        Play My Games Here <i className="uil uil-game-structure button__icon"></i>
+                    <a href="https://officialyenum.itch.io/liberation-code" className="button button-flex">
+                        Play Liberation Code <i className="uil uil-game-structure button__icon"></i>
                     </a>
                 </div>
 
