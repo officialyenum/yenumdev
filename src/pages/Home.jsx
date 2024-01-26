@@ -78,13 +78,13 @@ const Home = () => {
                 </div>
             </div>
         </section>
+        <Portfolio/>
         <About/>
         {/* <Skills/> */}
         <Qualification/>
         {/* <Services/> */}
-        <Portfolio/>
-        <Project/>
-        <Contact/>
+        {/*<Project/> */}
+        {/* <Contact/> */}
       </main>
       <Footer/>
     </>

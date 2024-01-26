@@ -13,13 +13,16 @@ const Footer = () => {
                     </div>
                     <ul className="footer__links">
                         <li>
-                            <a href="#services" className="footer__link">Services</a>
+                            <p className="footer__link">+447979834278</p>
+                            {/* <a href="#services" className="footer__link">Services</a> */}
                         </li>
                         <li>
-                            <a href="#portfolio" className="footer__link">Portfolio</a>
+                            <p className="footer__link">oponechukwuyenum@gmail.com</p>
+                            {/* <a href="#portfolio" className="footer__link">Portfolio</a> */}
                         </li>
                         <li>
-                            <a href="#contact" className="footer__link">Contact Me</a>
+                            <p className="footer__link">Middlesbrough, UK</p>
+                            {/* <a href="#contact" className="footer__link">Contact</a> */}
                         </li>
                     </ul>
                     <div className="footer__socials">
