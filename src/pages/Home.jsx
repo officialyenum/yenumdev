@@ -1,12 +1,10 @@
 import { Helmet } from "react-helmet";
 import About from "../components/About/About";
 import Portfolio from "../components/Portfolio/Portfolio";
-import Project from "../components/Project/Project";
 import Qualification from "../components/Qualification/Qualification";
 import portrait from "../assets/images/prefil.png"
 
 import '../Styles/Home.css';
-import Contact from "../components/Contact/Contact";
 import Footer from "../components/Footer/Footer";
 
 
